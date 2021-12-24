@@ -1,18 +1,20 @@
 import styles from '../../styles/Dappstore.module.css';
 import Link from 'next/link'
-
+import Image from 'next/image';
 
 export default function ProjectCard(props) {
 
     function setID(props) {
-        localStorage.clear()
-        localStorage.setItem("projectID", JSON.stringify(props));
-        console.log(localStorage.getItem("projectID"))
+        if (typeof window !== 'undefined') {
+            localStorage.clear()
+            localStorage.setItem("projectID", JSON.stringify(props));
+            console.log(localStorage.getItem("projectID"))
+        }
     }
 
     return (
 
-        <Link href="/projectpage" className={styles['projectcard']}>
+        <Link href="/projectpage" passHref className={styles['projectcard']}>
             <div className={styles['card-body']}>
                 <img src={props.dapp.Logo} alt='ProxyIQ' className={styles['project-logo']}/>
                 <div className={styles['project-title']}>{props.dapp.Project}</div>

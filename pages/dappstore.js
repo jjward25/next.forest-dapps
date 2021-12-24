@@ -3,14 +3,17 @@ import MenuBar from './components/menubar';
 import ProjectCard from './components/projectcard';
 import dapps from '../public/dapps.json';
 import Link from 'next/link'
+import Image from 'next/image';
 
 function DappCategories() {
 
     function setID(props) {
-        localStorage.clear()
-        console.log("Clear Console: ", localStorage.getItem("projectID"))
-        localStorage.setItem("projectID", JSON.stringify(props));
-        console.log("LocalStorage: ",localStorage.getItem("projectID"))
+        if (typeof window !== 'undefined') {
+            localStorage.clear()
+            console.log("Clear Console: ", localStorage.getItem("projectID"))
+            localStorage.setItem("projectID", JSON.stringify(props));
+            console.log("LocalStorage: ",localStorage.getItem("projectID"))
+        }
     }
 
     return (
@@ -24,7 +27,7 @@ function DappCategories() {
                 <div className={styles['carousel-wrap']}>    
                     {dapps.filter(app => app.Featured==='TRUE').map(dapp => {
                         return (
-                            <div className={styles['projectcard']} key={dapp.ProjectID} onClick={()=>setID(dapp.ProjectID)}> <Link href="/projectpage" >
+                            <div className={styles['projectcard']} key={dapp.ProjectID} onClick={()=>setID(dapp.ProjectID)}> <Link href="/projectpage" passHref>
                                 <div className={styles['card-body']}>
                                     <img src={dapp.Logo} alt='ProxyIQ' className={styles['project-logo']} style={{margin:"2% 0",width:"245px", overflow:"hidden"}}/>
                                     <div className={styles['project-title']}>{dapp.Project}</div>

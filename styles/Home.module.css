@@ -31,7 +31,7 @@
   grid-area: middle;
   height: 33vh;
   background-color: #000;
-  opacity: 55%;
+  opacity: 80%;
   display: flex;
   z-index: 2;
 }
@@ -44,10 +44,11 @@
 .header-img-text{
   color: white;
   line-height: 1.5;
-  font-size: 150%;
+  font-size: 180%;
+  font-weight: 100;
   padding-left: 5%;
   padding-right: 5%;
-  z-index: 3;
+  z-index: 9;
   text-align: left;
   padding-top: 1%;
   padding-bottom: 1%;

@@ -10,7 +10,8 @@ let dappid = []
 
 if (typeof window !== 'undefined') {
     dappid = JSON.parse(localStorage.getItem("projectID"))
-}
+} else {dappid = dapps[Math.floor(Math.random() * dapps.length)].ProjectID}
+
 
 let dapp = dapps.filter(dapp => dapp.ProjectID===dappid)[0]
 

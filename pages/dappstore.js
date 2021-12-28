@@ -24,6 +24,7 @@ function DappCategories() {
                 <div className={styles['disclaimer-full']}>DISCLAIMER: SOME OF THESE SERVICES ARE NOT LIVE YET, AND ANY MARKET OPINIONS POSTED ON THIS SITE DO NOT CONSTITUTE ADVICE.</div>
                 
                 <div className={styles['carousel-header']}>Featured Apps</div>
+
                 <div className='horizontal-wrap' style={{display:'flex'}}>
                 <div className={styles['carousel-wrap']}>
                     {dapps.filter(app => app.Featured==='TRUE').map(dapp => {
@@ -43,39 +44,59 @@ function DappCategories() {
                         )        
                     })}
                     </div>    
-                <div style={{backgroundColor:"lightgrey", height:"400px", width:"2.5vw", zIndex:"2"}}>
-                    <div style={{fontSize:'100px'}}>{`>`}</div>
+                <div style={{backgroundColor:"lightgrey", height:"400px", width:"1.5vw", zIndex:"2",marginLeft:"1vw",display:"flex",justifyContent:"space-around"}}>
+                    <Image src="/right-carrot.png" height={"227"} width={"222"} ></Image>
                 </div>
                 </div>
                 
 
-                <div className={styles['carousel-header']}>{`Cloud Computing & Storage`}</div>                
+                <div className={styles['carousel-header']}>{`Cloud Computing & Storage`}</div>    
+                <div className='horizontal-wrap' style={{display:'flex'}}>
                 <div className={styles['carousel-wrap']}>
                     {dapps.filter(app => app.Category==="Cloud Computing & Storage").map(dapp=>{
                         return (<div className={styles['projectcard']} key={dapp.ProjectID} onClick={()=>setID(dapp.ProjectID)}> <ProjectCard dapp={dapp}/></div>)
                     })}        
                 </div>
+                <div style={{backgroundColor:"lightgrey", height:"400px", width:"1.5vw", zIndex:"2",marginLeft:"1vw",display:"flex",justifyContent:"space-around"}}>
+                    <Image src="/right-carrot.png" height={"227"} width={"222"} ></Image>
+                </div>
+                </div>            
                 
-                <div className={styles['carousel-header']}>{`Private Chains / Custom Solutions`}</div>                
+                <div className={styles['carousel-header']}>{`Private Chains / Custom Solutions`}</div>    
+                <div className='horizontal-wrap' style={{display:'flex'}}>
                 <div className={styles['carousel-wrap']}>
                     {dapps.filter(app => app.Category==="Private Chains / Custom Solutions").map(dapp=>{
                         return (<div className={styles['projectcard']} key={dapp.ProjectID} onClick={()=>setID(dapp.ProjectID)}> <ProjectCard dapp={dapp}/></div>)
                     })}        
                 </div>
+                <div style={{backgroundColor:"lightgrey", height:"400px", width:"1.5vw", zIndex:"2",marginLeft:"1vw",display:"flex",justifyContent:"space-around"}}>
+                    <Image src="/right-carrot.png" height={"227"} width={"222"} ></Image>
+                </div>
+                </div>            
 
-                <div className={styles['carousel-header']}>{`Content Management / Media`}</div>                
+                <div className={styles['carousel-header']}>{`Content Management / Media`}</div>      
+                <div className='horizontal-wrap' style={{display:'flex'}}>         
                 <div className={styles['carousel-wrap']}>
                     {dapps.filter(app => app.Category==="Content Management / Media").map(dapp=>{
                         return (<div className={styles['projectcard']} key={dapp.ProjectID} onClick={()=>setID(dapp.ProjectID)}> <ProjectCard dapp={dapp}/></div>)
                     })}            
                 </div>
+                <div style={{backgroundColor:"lightgrey", height:"400px", width:"1.5vw", zIndex:"2",marginLeft:"1vw",display:"flex",justifyContent:"space-around"}}>
+                    <Image src="/right-carrot.png" height={"227"} width={"222"} ></Image>
+                </div>
+                </div> 
 
-                <div className={styles['carousel-header']}>{`Banking, Custody & Investments`}</div>                
+                <div className={styles['carousel-header']}>{`Banking, Custody & Investments`}</div>  
+                <div className='horizontal-wrap' style={{display:'flex'}}>
                 <div className={styles['carousel-wrap']}>
                     {dapps.filter(app => app.Category==="Banking, Custody & Investments").map(dapp=>{
                         return (<div className={styles['projectcard']} key={dapp.ProjectID} onClick={()=>setID(dapp.ProjectID)}> <ProjectCard dapp={dapp}/></div>)
                     })}
                 </div>
+                <div style={{backgroundColor:"lightgrey", height:"400px", width:"1.5vw", zIndex:"2",marginLeft:"1vw",display:"flex",justifyContent:"space-around"}}>
+                    <Image src="/right-carrot.png" height={"227"} width={"222"} ></Image>
+                </div>
+                </div>              
 
             </div>
             

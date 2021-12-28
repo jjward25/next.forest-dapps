@@ -1,84 +1,82 @@
-.dapp-categories-wrap{
-    height: 100%;
-    width: 100%;
+.dapp-categories-wrap {
+  height: 100%;
+  width: 100%;
 }
 
-.dapp-store-wrap{
-    display: flex;
-    flex-direction: column;
-    margin: 0 5% 0 5%;
-    padding-top: 11vh;
+.dapp-store-wrap {
+  display: flex;
+  flex-direction: column;
+  margin: 0 5% 0 5%;
+  padding-top: 11vh;
 }
 
-.disclaimer-full{
-    background-color: lightgrey;
-    font-weight: bold;
-    font-size: 150%;
-    color: darkslategray;
-    border: 2.5px solid rgb(192, 192, 192);
+.disclaimer-full {
+  background-color: lightgrey;
+  font-weight: bold;
+  font-size: 150%;
+  color: darkslategray;
+  border: 2.5px solid rgb(192, 192, 192);
 }
 
-.carousel-header{
-    font-weight: bold;
-    font-size: 150%;
-    color: darkslategray;
-    text-align: left;
-    margin: 1.5% 0 1.5% 0;
+.carousel-header {
+  font-weight: bold;
+  font-size: 150%;
+  color: darkslategray;
+  text-align: left;
+  margin: 1.5% 0 1.5% 0;
 }
 
-.carousel-wrap{
-    display: flex;
-    overflow: scroll;
-    height: 420px;
+.carousel-wrap {
+  display: flex;
+  overflow: scroll;
+  height: 420px;
 }
 .carousel-wrap::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
-
 
 /** Project Card CSS **/
 
-
 .projectcard {
-    height: 400px;
-    width: 255px;
-    border: 5px rgb(8, 63, 8) double;
-    border-radius: 8px;
-    margin: 0 2.5vw 0 0;
+  height: 400px;
+  width: 255px;
+  border: 5px rgb(8, 63, 8) double;
+  border-radius: 8px;
+  margin: 0 2.5vw 0 0;
 }
 
-
-.card-body{
-    width: 245px;
-    padding-top: 5%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
+.card-body {
+  width: 245px;
+  padding-top: 5%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .project-logo {
-    max-width: 245px;
-    max-height: 90px;
-    margin: 0 auto;
-    margin-bottom: 10%;
+  max-width: 150px;
+  max-height: 90px;
+  margin: 0 auto;
+  margin-bottom: 10%;
 }
 
-.project-title, .project-detail{
-    font-weight: bold;
-    font-size: 140%;
-    color: rgb(64, 72, 107);
-    margin: 2.5% auto 7.5% auto;
-    text-align: center;
+.project-title,
+.project-detail {
+  font-weight: bold;
+  font-size: 140%;
+  color: rgb(64, 72, 107);
+  margin: 2.5% auto 7.5% auto;
+  text-align: center;
 }
 
-.project-title{
-    color: black;
-    font-size: 150%;
+.project-title {
+  color: green;
+  text-shadow: 1px 1px;
+  font-size: 150%;
 }
 
-.meta-title{
-    font-size: 125%;
-    color: darkslategray;
-    margin: 0 auto 1% auto;
+.meta-title {
+  font-size: 125%;
+  color: darkslategray;
+  margin: 0 auto 1% auto;
 }
-

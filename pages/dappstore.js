@@ -27,16 +27,18 @@ function DappCategories() {
                 <div className={styles['carousel-wrap']}>    
                     {dapps.filter(app => app.Featured==='TRUE').map(dapp => {
                         return (
-                            <div className={styles['projectcard']} key={dapp.ProjectID} onClick={()=>setID(dapp.ProjectID)}> <Link href="/projectpage" passHref>
-                                <div className={styles['card-body']}>
-                                    <img src={dapp.Logo} alt='ProxyIQ' className={styles['project-logo']} style={{margin:"2% 0",width:"245px", overflow:"hidden"}}/>
-                                    <div className={styles['project-title']}>{dapp.Project}</div>
-                                    <div className={styles['meta-title']}>Category</div>
-                                    <div className={styles['project-detail']}>{dapp.Category}</div>
-                                    <div className={styles['meta-title']}>Focus</div>
-                                    <div className={styles['project-detail']}>{dapp.Focus}</div>
-                                </div>
-                            </Link></div>
+                            <div className={styles['projectcard']} key={dapp.ProjectID} onClick={()=>setID(dapp.ProjectID)}> 
+                                <Link href="/projectpage" passHref>
+                                    <div className={styles['card-body']}>
+                                        <Image src={dapp.Logo} alt='Logo' className={styles['project-logo']} width='245px' height='90px' style={{margin:"2% 0", overflow:"hidden"}}/>
+                                        <div className={styles['project-title']}>{dapp.Project}</div>
+                                        <div className={styles['meta-title']}>Category</div>
+                                        <div className={styles['project-detail']}>{dapp.Category}</div>
+                                        <div className={styles['meta-title']}>Focus</div>
+                                        <div className={styles['project-detail']}>{dapp.Focus}</div>
+                                    </div>
+                                </Link>
+                            </div>
                         )        
                     })}
                 </div>

@@ -16,7 +16,7 @@ export default function ProjectCard(props) {
 
         <Link href="/projectpage" passHref className={styles['projectcard']}>
             <div className={styles['card-body']}>
-                <img src={props.dapp.Logo} alt='ProxyIQ' className={styles['project-logo']}/>
+                <Image src={props.dapp.Logo} alt='Logo' className={styles['project-logo']} width='45px' height='90px'/>
                 <div className={styles['project-title']}>{props.dapp.Project}</div>
                 <div className={styles['meta-title']}>Category</div>
                 <div className={styles['project-detail']}>{props.dapp.Category}</div>

@@ -83,3 +83,9 @@
   color: darkslategray;
   margin: 0 auto 1% auto;
 }
+
+@media (max-width: 600px) {
+  .disclaimer-full {
+    font-size: 80%;
+  }
+}

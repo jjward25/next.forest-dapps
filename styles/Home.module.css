@@ -208,8 +208,13 @@
 }
 
 @media (max-width: 600px) {
-  .grid {
-    width: 100%;
-    flex-direction: column;
+  .header-img-text {
+    font-size: 120%;
+  }
+  .summary-blurb-text {
+    font-size: 88%;
+  }
+  .summary-blurb-container {
+    justify-content: space-around;
   }
 }

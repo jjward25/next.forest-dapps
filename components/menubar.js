@@ -8,7 +8,7 @@ return (
         <div className={styles['menubar']}>
 
             <div className={styles['menubar-overlay']}>
-                <Image src="/forest-header.png" className={styles['menubar-img-bg']} alt='' layout='fill' objectFit='cover'/>
+                <Image src="/forest-header.png" className={styles['menubar-img-bg']} alt='' layout='fill'/>
             </div>
 
             <Link href="/" className={styles['logo-wrap']} passHref>

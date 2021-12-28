@@ -1,33 +1,32 @@
 /** Home Wrap **/
-.content-wrap{
+.content-wrap {
   width: 100vw;
   max-width: 100%;
 }
 
 /** Home Landing Background **/
-.header-image-wrap{
+.header-image-wrap {
   height: 100vh;
   width: 100%;
   overflow: hidden;
   display: grid;
-  grid-template-areas: "top"
-                       "middle"
-                       "bottom";
+  grid-template-areas:
+    "top"
+    "middle"
+    "bottom";
 }
-.header-img-cover{
-  background-color: #94ACAD;
-  width: 100%;
-  height: 100%;
+.header-img-cover {
+  background-color: #94acad;
+  width: 100vw;
+  height: 100vh;
   grid-area: top/top/bottom/bottom;
   z-index: 1;
   opacity: 80%;
 }
-.header-img{
-  max-width: 100%;
-  height: 100vh;
-  grid-area: top/top/bottom/bottom
+.header-img {
+  max-width: 100vw;
 }
-.header-img-text-overlay{
+.header-img-text-overlay {
   grid-area: middle;
   height: 33vh;
   background-color: #000;
@@ -35,13 +34,13 @@
   display: flex;
   z-index: 2;
 }
-.header-img-text-wrap{
+.header-img-text-wrap {
   grid-area: middle;
   display: flex;
   flex-direction: column;
   margin: auto;
 }
-.header-img-text{
+.header-img-text {
   color: white;
   line-height: 1.5;
   font-size: 180%;
@@ -63,7 +62,7 @@
   padding-top: 3.5%;
   margin: auto;
 }
-.summary-blurb-container{
+.summary-blurb-container {
   width: 55%;
   max-height: 85%;
   height: 85%;
@@ -76,12 +75,12 @@
   justify-content: space-between;
   padding: 1.5%;
 }
-.summary-blurb-header{
+.summary-blurb-header {
   font-size: 125%;
   font-weight: bold;
   text-align: center;
 }
-.summary-blurb-text{
+.summary-blurb-text {
   font-size: 100%;
   text-align: left;
   padding-left: 5%;
@@ -96,14 +95,14 @@
   flex-direction: column;
   padding-bottom: 7.55%;
 }
-.text-section-wrap{
+.text-section-wrap {
   width: 100%;
   max-width: 100%;
   display: flex;
   flex-direction: column;
   margin: auto;
 }
-.long-form-header{
+.long-form-header {
   font-size: 125%;
   font-weight: bold;
   padding-left: 7.5%;
@@ -111,7 +110,7 @@
   text-align: left;
   padding-bottom: 1.5%;
 }
-.long-form-text{
+.long-form-text {
   font-size: 125%;
   text-align: left;
   padding-left: 7.5%;

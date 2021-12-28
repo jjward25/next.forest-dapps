@@ -23,7 +23,7 @@ return (
         <div className={styles['header-image-wrap']}>
             
             <div className={styles['header-img-cover']}>
-                <Image src="/the-forest.png" alt='the-forest' title={`the-forest`} className={styles['header-img']} layout='fill' objectFit='cover'/>
+                <Image src="/the-forest.png" alt='the-forest' title={`the-forest`} className={styles['header-img']}  layout='fill'/>
             </div>
 
             <div className={styles['header-img-text-overlay']}>

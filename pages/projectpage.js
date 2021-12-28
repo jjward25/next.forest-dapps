@@ -29,7 +29,7 @@ console.log(dapp)
                     <div className={styles['project-top-left']} style={{width: '500px', display:'flex',flexDirection:'column', borderRight:'1px solid forestgreen', padding:'0 1.5% 1% 1.5%'}}>
                         <div className={styles['project']} style={{display:'flex'}}>
                             <Image src={dapp.Logo} alt='logo' width='220px' height='140px' style={{maxWidth:'220px', margin:'0 auto', width:'30%'}}/>
-                            <p style={{fontSize:"65px",lineHeight:"70px", fontWeight:"bold", height:"140px",overflow:"hidden",color:"white", width:'70%', textAlign:'left', paddingLeft:'2.5%', margin:"0", webkitTextStrokeWidth:"2.5px",WebkitTextStrokeColor:"black", letterSpacing:"4px", wordWrap:"break-word"}}>{dapp.Project}</p>
+                            <p style={{fontSize:"40px",lineHeight:"70px", fontWeight:"bold", height:"140px",overflow:"hidden",color:"white", width:'70%', textAlign:'left', paddingLeft:'2.5%', margin:"0", webkitTextStrokeWidth:"2.5px",WebkitTextStrokeColor:"black", letterSpacing:"4px", wordWrap:"break-word"}}>{dapp.Project}</p>
                         </div>
                         <div style={{display:'flex',borderBottom:'1px solid forestgreen',borderTop:'1px solid forestgreen', padding:'2.5% 0', justifyContent:'space-around'}}>
                            <Image src="/Github.png" alt='Github' width='30px' height='30px'/>

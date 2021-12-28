@@ -1,42 +1,42 @@
 /** Home Menubar **/
-.menubar{
-    position: fixed;
-    z-index: 5;
-    height: 8vh;
-    width: 100%;
-    display: flex;
-    margin-top: 0;
-    justify-content: space-between;
-    background-color: #FFFFFF;
+.menubar {
+  position: fixed;
+  z-index: 5;
+  height: 8vh;
+  width: 100%;
+  display: flex;
+  margin-top: 0;
+  justify-content: space-between;
+  background-color: #ffffff;
 }
-.menubar-overlay{
-    position: fixed;
-    background-color: #000;
-    opacity: 90%;
-    z-index: 5;
-    height: 8vh;
-    width: 100%;
+.menubar-overlay {
+  position: fixed;
+  z-index: 5;
+  height: 8vh;
+  width: 100%;
+  background-image: url("/the-forest.png");
+  background-size: 113.5% auto;
 }
 .menubar-img-bg {
-    z-index: 7;
-    opacity: 65%;
+  z-index: 7;
+  opacity: 65%;
 }
 
-.logo{
-    z-index: 6;
-    margin-left: 2.5%;
+.logo {
+  z-index: 6;
+  margin-left: 2.5%;
 }
-.menu-button-wrap{
-    width: auto;
-    height: 100%;
-    display: flex;
-    z-index: 6;
-    margin-right: 6%;
+.menu-button-wrap {
+  width: auto;
+  height: 100%;
+  display: flex;
+  z-index: 6;
+  margin-right: 6%;
 }
-.menu-button{
-    color: #FFF;
-    z-index: 6;
-    font-weight: 500;
-    font-size: 115%;
-    margin: auto;
+.menu-button {
+  color: #fff;
+  z-index: 6;
+  font-weight: 500;
+  font-size: 115%;
+  margin: auto;
 }

@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from '../styles/Home.module.css';
-import MenuBar from './components/menubar';
+import MenuBar from '../components/menubar';
 import Image from 'next/image';
 
 /*import { layoutGenerator } from 'react-break';*/

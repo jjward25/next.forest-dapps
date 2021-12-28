@@ -1,5 +1,5 @@
 import styles from '../styles/Projectpage.module.css';
-import MenuBar from './components/menubar';
+import MenuBar from '../components/menubar';
 import dapps from '../public/dapps.json';
 import Image from 'next/image';
 

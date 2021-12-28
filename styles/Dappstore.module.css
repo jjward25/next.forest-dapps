@@ -6,7 +6,7 @@
 .dapp-store-wrap {
   display: flex;
   flex-direction: column;
-  margin: 0 5% 0 5%;
+  margin: 0 2.5% 0 5%;
   padding-top: 11vh;
 }
 
@@ -16,6 +16,7 @@
   font-size: 150%;
   color: darkslategray;
   border: 2.5px solid rgb(192, 192, 192);
+  margin-right: 2.5vw;
 }
 
 .carousel-header {
@@ -30,6 +31,7 @@
   display: flex;
   overflow: scroll;
   height: 420px;
+  z-index: 0;
 }
 .carousel-wrap::-webkit-scrollbar {
   display: none;

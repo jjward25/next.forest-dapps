@@ -24,7 +24,8 @@ function DappCategories() {
                 <div className={styles['disclaimer-full']}>DISCLAIMER: SOME OF THESE SERVICES ARE NOT LIVE YET, AND ANY MARKET OPINIONS POSTED ON THIS SITE DO NOT CONSTITUTE ADVICE.</div>
                 
                 <div className={styles['carousel-header']}>Featured Apps</div>
-                <div className={styles['carousel-wrap']}>    
+                <div className='horizontal-wrap' style={{display:'flex'}}>
+                <div className={styles['carousel-wrap']}>
                     {dapps.filter(app => app.Featured==='TRUE').map(dapp => {
                         return (
                             <div className={styles['projectcard']} key={dapp.ProjectID} onClick={()=>setID(dapp.ProjectID)}> 
@@ -41,7 +42,12 @@ function DappCategories() {
                             </div>
                         )        
                     })}
+                    </div>    
+                <div style={{backgroundColor:"lightgrey", height:"400px", width:"2.5vw", zIndex:"2"}}>
+                    <div style={{fontSize:'100px'}}>{`>`}</div>
                 </div>
+                </div>
+                
 
                 <div className={styles['carousel-header']}>{`Cloud Computing & Storage`}</div>                
                 <div className={styles['carousel-wrap']}>

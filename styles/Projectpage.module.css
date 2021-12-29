@@ -12,17 +12,36 @@
   padding-top: 8.5vh;
   background-color: white;
 }
-
+.project-top {
+  border-bottom: 1px solid forestgreen;
+  display: flex;
+}
+.project-top-left {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid forestgreen;
+  padding: 0 1.5% 1% 1.5%;
+}
 .project-header {
   display: flex;
   flex-direction: column;
 }
-
 .prj-pg-logo-wrap {
   width: 100%;
   height: 100%;
   display: flex;
   justify-content: center;
+}
+.project-top-right {
+  width: auto;
+  padding: 0 1.5%;
+}
+
+.prj-pg-stat-bar {
+  display: flex;
+  border-bottom: 1px solid forestgreen;
+  height: 200px;
 }
 
 .chart-description {
@@ -33,4 +52,32 @@
   color: darkslategray;
   border: 2.5px solid rgb(192, 192, 192);
   margin-right: 2.5vw;
+}
+
+@media (max-width: 660px) {
+  .dapp-project-wrap {
+    width: 100vw;
+  }
+  .project-top {
+    flex-direction: column;
+    width: 100vw;
+  }
+  .project-top-left {
+    width: 100vw;
+    padding: 1% 1%;
+    border-right: none;
+    border-bottom: 1px solid green;
+  }
+  .project-top-right {
+    width: 100vw;
+    padding: 0 1.5%;
+  }
+
+  .prj-pg-stat-bar {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid forestgreen;
+    height: auto;
+    width: 100vw;
+  }
 }

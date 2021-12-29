@@ -20,13 +20,19 @@ if (dapp === 'undefined') {dapp = dapps.filter(dapp => dapp.ProjectID===1)}
 console.log(dapp)
 
     return (
-        <div className={styles['dapp-project-wrap']}>
+        <div className={styles['container']}>
+        <head>
+            <title>The Forest</title>
+            <meta name="description" content="Blockchain Education for Everyone"/>
+            <meta name="viewport" content="width=device-width, initial-scale=1" />
+        </head>
+        <main className={styles['dapp-project-wrap']}>
             <MenuBar/>
 
             <div className={styles['project-wrap']}>
 
-                <div className={styles['project-top']} style={{borderBottom:'1px solid forestgreen',display:'flex'}}>
-                    <div className={styles['project-top-left']} style={{width: '500px', display:'flex',flexDirection:'column', borderRight:'1px solid forestgreen', padding:'0 1.5% 1% 1.5%'}}>
+                <div className={styles['project-top']}>
+                    <div className={styles['project-top-left']}>
                         <div className={styles['project-header']}>
                             <div className={styles['prj-pg-logo-wrap']}>
                                 <Image src={dapp.Logo} alt='prj-logo' width='220px' height='110px' layout='fixed'/>
@@ -34,9 +40,9 @@ console.log(dapp)
                             <p style={{fontSize:"40px",lineHeight:"70px", fontWeight:"bold",overflow:"wrap",color:"white", width:'100%', textAlign:'left', paddingLeft:'2.5%', margin:"0", webkitTextStrokeWidth:"2.5px",WebkitTextStrokeColor:"black", letterSpacing:"4px", wordWrap:"break-word"}}>{dapp.Project}</p>
                         </div>
                         <div style={{display:'flex',borderBottom:'1px solid forestgreen',borderTop:'1px solid forestgreen', padding:'2.5% 0', justifyContent:'space-around'}}>
-                           <Image src="/Github.png" alt='Github' width='30px' height='30px'/>
-                           <Image src="/Medium.png" alt='Medium' width='30px' height='30px'/>
-                           <Image src="/Twitter.png" alt='twitter' width='30px' height='30px'/>
+                        <Image src="/Github.png" alt='Github' width='30px' height='30px'/>
+                        <Image src="/Medium.png" alt='Medium' width='30px' height='30px'/>
+                        <Image src="/Twitter.png" alt='twitter' width='30px' height='30px'/>
                             <Image src="/Telegram.png" alt='telegram' width='30px' height='30px' />
                             <Image src="/Discord.png" alt='discord' width='30px' height='30px' />
                         </div>
@@ -47,13 +53,13 @@ console.log(dapp)
                         <div style={{width:'100%',fontWeight:'bold', padding:'1% 0',border:'1px solid forestgreen', margin:'1% auto',backgroundColor:'forestgreen', color:'white'}}>+ ACTIONS</div>
                     </div>
 
-                    <div className={styles['project-top-right']} style={{width: '750px',padding:'0 1.5%'}}>
+                    <div className={styles['project-top-right']}>
                         <p style={{fontWeight:'bold',textAlign:'left'}}>{dapp.Project}</p>
                         <p style={{textAlign:'left'}}>{`Imagine an audio service like spotify where the music was uploaded and always attributed to the author.  So creators get more than 12% of their industry's profits, the current estimate for musical artists.`}</p>
                     </div>
                 </div>
 
-                <div style={{display:'flex',borderBottom:'1px solid forestgreen', height:'200px'}}>
+                <div className={styles['prj-pg-stat-bar']}>
                     <div style={{display:'flex',flexDirection:'column', justifyContent:'space-around', textAlign:'left',padding:'0 2.5%',borderRight:'1px solid forestgreen', maxWidth:'250px'}}>
                         <p style={{margin:'0'}}><strong>Market Cap:</strong> $8,954,022,767</p>
                         <p style={{margin:'0'}}><strong>Cap Rank:</strong> 20 ^</p>
@@ -70,6 +76,7 @@ console.log(dapp)
                         <p style={{margin:'0'}}><strong>USAGE TRANSACTIONS (24H): 24,332</strong></p>
                         <p style={{margin:'0'}}><strong>ACTIVE USERS (24H): 1,422</strong></p>
                         <p style={{margin:'0'}}><strong>ACTIVE MONTHLY USERS: 8,492</strong></p>
+                        <div style={{fontWeight:'bold', width:'100%',padding:'1% 0%',border:'1px solid forestgreen', margin:'0',backgroundColor:'forestgreen', color:'white', textAlign:'center'}}>DEMO</div>
                     </div>
                     <div style={{display:'flex',flexDirection:'column', justifyContent:'space-around', textAlign:'left',padding:'0 1.5%', margin:'0 auto', width:'25%', maxWidth:'375px'}}>
                         <p style={{margin:'0'}}><strong>FOUNDERS:</strong> {dapp.Founders}</p>
@@ -85,7 +92,7 @@ console.log(dapp)
                 <div className={styles['project-bottom']} style={{display:'flex', borderBottom:'1px solid forestgreen'}}>
                     <div className={styles['screen-shots']} style={{width:'55%', borderRight:'1px solid forestgreen'}}>
                         <div style={{margin:'2.5% auto' , maxWidth:'40vw', minWidth:'80%'}}>
-                          <Image src="/ScreenShot.png" alt='app-screenshots' width={'315px'} height={'350spx'} layout='responsive'/>
+                        <Image src="/ScreenShot.png" alt='app-screenshots' width={'315px'} height={'350spx'} layout='responsive'/>
                         </div>
                     </div>
                     <div className={styles['project-reviews']} style={{width:'45%', display:'flex'}}>
@@ -105,6 +112,7 @@ console.log(dapp)
 
             </div>
 
+           </main> 
         </div>
     )}
 

@@ -207,7 +207,7 @@
   margin-left: 0.5rem;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 660px) {
   .header-img-text {
     font-size: 120%;
   }

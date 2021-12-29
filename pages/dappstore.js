@@ -17,7 +17,13 @@ function DappCategories() {
     }
 
     return (
-        <div className={styles['dapp-categories-wrap']}>
+        <div className={styles['container']}>
+        <head>
+            <title>The Forest</title>
+            <meta name="description" content="Blockchain Education for Everyone"/>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        </head>
+        <main className={styles['dapp-categories-wrap']}>
             <MenuBar/>
             <div className={styles['dapp-store-wrap']}>
                 
@@ -101,7 +107,7 @@ function DappCategories() {
                 </div>              
 
             </div>
-            
+            </main>
         </div>
 )};
 

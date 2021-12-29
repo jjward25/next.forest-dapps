@@ -98,7 +98,7 @@ console.log(dapp)
                     <div style={{marginTop:'1.5%'}}>
                         <Image src="/chart-example.png" width={"1428"} height={"722"}></Image>
                     </div>
-                    <div className={styles['chart-description']}>DISCLAIMER: SOME OF THESE SERVICES ARE NOT LIVE YET, AND ANY MARKET OPINIONS POSTED ON THIS SITE DO NOT CONSTITUTE ADVICE.</div>
+                    <div className={styles['chart-description']}>Chart description.</div>
                 </div>
 
             </div>

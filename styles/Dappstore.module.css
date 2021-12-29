@@ -64,7 +64,7 @@
 }
 
 .project-title,
-.project-detail {
+.meta-title {
   font-weight: bold;
   font-size: 140%;
   color: rgb(64, 72, 107);
@@ -76,12 +76,14 @@
   color: green;
   text-shadow: 1px 1px;
   font-size: 150%;
+  padding-bottom: 5%;
 }
 
-.meta-title {
+.project-detail {
   font-size: 125%;
   color: darkslategray;
   margin: 0 auto 1% auto;
+  text-align: center;
 }
 
 @media (max-width: 600px) {

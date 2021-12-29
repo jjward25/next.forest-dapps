@@ -32,7 +32,9 @@ function DappCategories() {
                             <div className={styles['projectcard']} key={dapp.ProjectID} onClick={()=>setID(dapp.ProjectID)}> 
                                 <Link href="/projectpage" passHref>
                                     <div className={styles['card-body']}>
-                                        <div style={{width:"100%",height:'auto', display:"flex",justifyContent:'space-around',marginBottom:'15px'}}><Image src={dapp.Logo} alt='Logo' width='140px' height='70px'/> </div>
+                                        <div style={{width:"100%",height:'100%', display:"flex",justifyContent:'space-around',marginBottom:'15px'}}>
+                                            <Image src={dapp.Logo} alt='Logo' width='140px' height='70px'/> 
+                                        </div>
                                         <div className={styles['project-title']}>{dapp.Project}</div>
                                         <div className={styles['meta-title']}>Category</div>
                                         <div className={styles['project-detail']}>{dapp.Category}</div>

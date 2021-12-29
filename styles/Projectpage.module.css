@@ -17,3 +17,13 @@
   display: flex;
   flex-direction: column;
 }
+
+.chart-description {
+  background-color: lightgrey;
+  font-weight: bold;
+  font-size: 110%;
+  text-align: center;
+  color: darkslategray;
+  border: 2.5px solid rgb(192, 192, 192);
+  margin-right: 2.5vw;
+}

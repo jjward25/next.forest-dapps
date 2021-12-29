@@ -58,18 +58,18 @@ console.log(dapp)
                         <p style={{margin:'0'}}><strong>Current Price:</strong> $8.95</p>
                         <p style={{margin:'0'}}><strong>Trading Volume:</strong> 22,767</p>
                     </div>
-                    <div style={{display:'flex',flexDirection:'column', justifyContent:'space-around', textAlign:'left',padding:'0 2.5% 2.5% 2.5%',borderRight:'1px solid forestgreen', maxWidth:'250px'}}>
+                    <div style={{display:'flex',flexDirection:'column', justifyContent:'space-around', textAlign:'left',padding:'0 2.5%',borderRight:'1px solid forestgreen', maxWidth:'250px'}}>
                         <p style={{margin:'0'}}><strong>APY: 45%</strong> AVG: 42.4%</p>
                         <p style={{margin:'0'}}><strong>MIN. TO STAKE: 10 TOKENS</strong></p>
                         <p style={{margin:'0'}}><strong>TOTAL STAKED: $94M</strong></p>
                         <div style={{fontWeight:'bold', width:'100%',padding:'1% 0%',border:'1px solid forestgreen', margin:'0',backgroundColor:'forestgreen', color:'white', textAlign:'center'}}>STAKE</div>
                     </div>
-                    <div style={{display:'flex',flexDirection:'column', justifyContent:'space-around', textAlign:'left',padding:'0 2.5% 2.5% 2.5%',borderRight:'1px solid forestgreen', maxWidth:'375px'}}>
+                    <div style={{display:'flex',flexDirection:'column', justifyContent:'space-around', textAlign:'left',padding:'0 2.5%',borderRight:'1px solid forestgreen', maxWidth:'375px'}}>
                         <p style={{margin:'0'}}><strong>USAGE TRANSACTIONS (24H): 24,332</strong></p>
                         <p style={{margin:'0'}}><strong>ACTIVE USERS (24H): 1,422</strong></p>
                         <p style={{margin:'0'}}><strong>ACTIVE MONTHLY USERS: 8,492</strong></p>
                     </div>
-                    <div style={{display:'flex',flexDirection:'column', justifyContent:'space-around', textAlign:'left',padding:'0 1.5% 2.5% 1.5%', margin:'0 auto', width:'25%', maxWidth:'375px'}}>
+                    <div style={{display:'flex',flexDirection:'column', justifyContent:'space-around', textAlign:'left',padding:'0 1.5%', margin:'0 auto', width:'25%', maxWidth:'375px'}}>
                         <p style={{margin:'0'}}><strong>FOUNDERS:</strong> {dapp.Founders}</p>
                         <p style={{margin:'0'}}><strong>INVESTORS:</strong> {dapp.Investors}</p>
                         <div style={{display:'flex', flexWrap:'wrap'}}>
@@ -95,7 +95,10 @@ console.log(dapp)
 
                 <div className={styles['project-analysis']} style={{textAlign:'left', padding:'1.5%'}}>
                     <strong style={{textAlign:'left'}}>APP ANALYSIS</strong>
-                    <div style={{marginTop:'1.5%'}}>CHART</div>
+                    <div style={{marginTop:'1.5%'}}>
+                        <Image src="/chart-example.png" width={"1428"} height={"722"}></Image>
+                    </div>
+                    <div className={styles['chart-description']}>DISCLAIMER: SOME OF THESE SERVICES ARE NOT LIVE YET, AND ANY MARKET OPINIONS POSTED ON THIS SITE DO NOT CONSTITUTE ADVICE.</div>
                 </div>
 
             </div>

@@ -105,10 +105,10 @@ console.log(dapp)
                 <div className={styles['project-analysis']} style={{textAlign:'left', padding:'1.5%'}}>
                     <strong style={{textAlign:'left'}}>APP ANALYSIS</strong>
                     <div style={{marginTop:'1.5%'}}>
-                        <Image src="/chart-example.png" width={"1428"} height={"722"}></Image>
+                        <Image src="/chart-example.png" width={"1428"} height={"722"} alt='chart'></Image>
                     </div>
-                    <div className={styles['chart-description']}>This chart shows [value] by [measure] by [time].  It's helpful in that more users typically indicates a quality service.
-                            <br/>This chart shows the token's </div>
+                    <div className={styles['chart-description']}>{`This chart shows [value] by [measure] by [time].  It's helpful in that more users typically indicates a quality service.`}
+                            <br/>{`This chart shows the token's`}</div>
                 </div>
 
             </div>

@@ -60,25 +60,25 @@ console.log(dapp)
                 </div>
 
                 <div className={styles['prj-pg-stat-bar']}>
-                    <div style={{display:'flex',flexDirection:'column', justifyContent:'space-around', textAlign:'left',padding:'0 2.5%',borderRight:'1px solid forestgreen', maxWidth:'250px'}}>
+                    <div className={styles['statbar-left']}>
                         <p style={{margin:'0'}}><strong>Market Cap:</strong> $8,954,022,767</p>
                         <p style={{margin:'0'}}><strong>Cap Rank:</strong> 20 ^</p>
                         <p style={{margin:'0'}}><strong>Current Price:</strong> $8.95</p>
                         <p style={{margin:'0'}}><strong>Trading Volume:</strong> 22,767</p>
                     </div>
-                    <div style={{display:'flex',flexDirection:'column', justifyContent:'space-around', textAlign:'left',padding:'0 2.5%',borderRight:'1px solid forestgreen', maxWidth:'250px'}}>
+                    <div className={styles['statbar-left']}>
                         <p style={{margin:'0'}}><strong>APY: 45%</strong> AVG: 42.4%</p>
                         <p style={{margin:'0'}}><strong>MIN. TO STAKE: 10 TOKENS</strong></p>
                         <p style={{margin:'0'}}><strong>TOTAL STAKED: $94M</strong></p>
                         <div style={{fontWeight:'bold', width:'100%',padding:'1% 0%',border:'1px solid forestgreen', margin:'0',backgroundColor:'forestgreen', color:'white', textAlign:'center'}}>STAKE</div>
                     </div>
-                    <div style={{display:'flex',flexDirection:'column', justifyContent:'space-around', textAlign:'left',padding:'0 2.5%',borderRight:'1px solid forestgreen', maxWidth:'375px'}}>
+                    <div className={styles['statbar-right']}>
                         <p style={{margin:'0'}}><strong>USAGE TRANSACTIONS (24H): 24,332</strong></p>
                         <p style={{margin:'0'}}><strong>ACTIVE USERS (24H): 1,422</strong></p>
                         <p style={{margin:'0'}}><strong>ACTIVE MONTHLY USERS: 8,492</strong></p>
                         <div style={{fontWeight:'bold', width:'100%',padding:'1% 0%',border:'1px solid forestgreen', margin:'0',backgroundColor:'forestgreen', color:'white', textAlign:'center'}}>DEMO</div>
                     </div>
-                    <div style={{display:'flex',flexDirection:'column', justifyContent:'space-around', textAlign:'left',padding:'0 1.5%', margin:'0 auto', width:'25%', maxWidth:'375px'}}>
+                    <div className={styles['statbar-right']}>
                         <p style={{margin:'0'}}><strong>FOUNDERS:</strong> {dapp.Founders}</p>
                         <p style={{margin:'0'}}><strong>INVESTORS:</strong> {dapp.Investors}</p>
                         <div style={{display:'flex', flexWrap:'wrap'}}>
@@ -89,13 +89,13 @@ console.log(dapp)
                     </div>
                 </div>
 
-                <div className={styles['project-bottom']} style={{display:'flex', borderBottom:'1px solid forestgreen'}}>
-                    <div className={styles['screen-shots']} style={{width:'55%', borderRight:'1px solid forestgreen'}}>
+                <div className={styles['project-bottom']}>
+                    <div className={styles['screen-shots']}>
                         <div style={{margin:'2.5% auto' , maxWidth:'40vw', minWidth:'80%'}}>
                         <Image src="/ScreenShot.png" alt='app-screenshots' width={'315px'} height={'350spx'} layout='responsive'/>
                         </div>
                     </div>
-                    <div className={styles['project-reviews']} style={{width:'45%', display:'flex'}}>
+                    <div className={styles['project-reviews']}>
                         <div style={{padding:'1.5% 0', width:'100%'}}>
                             <Image src="/Reviews.png" alt="reviews" width='625' height='700px' layout='responsive'/>
                         </div>
@@ -107,7 +107,8 @@ console.log(dapp)
                     <div style={{marginTop:'1.5%'}}>
                         <Image src="/chart-example.png" width={"1428"} height={"722"}></Image>
                     </div>
-                    <div className={styles['chart-description']}>Chart description.</div>
+                    <div className={styles['chart-description']}>This chart shows [value] by [measure] by [time].  It's helpful in that more users typically indicates a quality service.
+                            <br/>This chart shows the token's </div>
                 </div>
 
             </div>

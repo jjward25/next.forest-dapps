@@ -120,7 +120,7 @@ export default function HomeContent() {
             >{`We organize these new blockchain services like an app store, so you have better context of what they’re trying to do. We use a mix of usage based metrics and industry favored metrics to give you a picture of this service as a competitor in the category, as well as the way the market may view it as an investment.`}</div>
             <div
               className={styles["long-form-text"]}
-            >{`We also make it as easy as possible for you to get involved in the idustry and start earning, from any device.  The risk to you is your initial investment.  Some blockchain networks are relatively mature, but most are not and could go to zero.`}</div>
+            >{`We also make it as easy as possible for you to get involved in the industry and start earning, from any device.  The risk to you is your initial investment.  Some blockchain networks are relatively mature, but most are not and could go to zero.`}</div>
             <div
               className={styles["long-form-text"]}
             >{`That said, the returns can be well worth that risk.  We want to help you make responsible investments in high-potential projects and get the most out of this emerging tech.`}</div>

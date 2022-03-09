@@ -55,6 +55,10 @@
   text-align: left;
   padding-top: 1%;
   padding-bottom: 1%;
+  @include for-tablet-landscape-up {
+    font-size: 25px;
+    font-weight: 500;
+  }
 }
 
 /** Summary Blurbs**/

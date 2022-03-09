@@ -59,7 +59,9 @@ export default function HomeContent() {
               evaluating these projects as real-world solutions.
             </li>
             <li className={styles["summary-blurb-text"]}>
-              Our goal is to maximize knowledge to minimize risk.
+              Our goal is to maximize knowledge to minimize risk... to give you
+              all the information you need as an individual or business manager
+              to make the right call on vendors and investments.
             </li>
           </div>
         </div>
@@ -90,10 +92,11 @@ export default function HomeContent() {
             <div
               className={styles["long-form-text"]}
             >{`The receipt-checkers, also known as Stakers or Validators, typically get rewards in the form of that network’s unique token for helping validate transactions and secure the network.`}</div>
-            <div
-              className={styles["long-form-text"]}
-            >{`Since many of these projects are pre-launch investment opportunities, these free tokens, can become quite valuable over time.  That’s the reward for helping secure their network during testing... a piece of the pie.`}</div>
-            <div className={styles["long-form-text"]}></div>
+            <div className={styles["long-form-text"]}>
+              {`Since many of these projects are pre-launch investment opportunities, these free tokens `}
+              <em>can</em>
+              {` become quite valuable over time.  That’s the reward for helping secure their network during testing... a piece of the pie.`}
+            </div>
           </div>
           <div className={styles["text-section-wrap"]}>
             <div className={styles["long-form-header"]}>What We Do</div>
@@ -106,6 +109,9 @@ export default function HomeContent() {
             <div
               className={styles["long-form-text"]}
             >{`Since a Dapp’s popularity is what drives its token’s value, usage metrics are crucial to evaluating the quality and potential of a service.  Is a network’s transaction volume mostly speculative investors, or users interacting with the service?  Is it a lot of users or a few power users? These tell us things about a service’s usefulness, and thus its value.`}</div>
+            <div
+              className={styles["long-form-text"]}
+            >{`We want to bring all of this information to you in a familiar, easy-to-digest format so you can learn about, invest, connect with, and use these new technologies as they develop.`}</div>
           </div>
           <div className={styles["text-section-wrap"]}>
             <div className={styles["long-form-header"]}>Our Approach</div>
@@ -114,7 +120,13 @@ export default function HomeContent() {
             >{`We organize these new blockchain services like an app store, so you have better context of what they’re trying to do. We use a mix of usage based metrics and industry favored metrics to give you a picture of this service as a competitor in the category, as well as the way the market may view it as an investment.`}</div>
             <div
               className={styles["long-form-text"]}
-            >{`We also make it as easy as possible for you to get involved in the idustry and start earning no-or-low-risk returns, from any device.  The future can be a scary place, but it doesn’t have to be.  Start staking for yourself today.`}</div>
+            >{`We also make it as easy as possible for you to get involved in the idustry and start earning, from any device.  The risk to you is your initial investment.  Some blockchain networks are relatively mature, but most are not and could go to zero.`}</div>
+            <div
+              className={styles["long-form-text"]}
+            >{`That said, the returns can be well worth that risk.  We want to help you make smart bets so you can make responsible investments in high-potential projects and get the most out of this emerging tech.`}</div>
+            <div
+              className={styles["long-form-text"]}
+            >{`The future can be a scary place, but it doesn’t have to be. Start staking for yourself today.`}</div>
           </div>
         </div>
       </main>

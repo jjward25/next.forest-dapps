@@ -123,7 +123,7 @@ export default function HomeContent() {
             >{`We also make it as easy as possible for you to get involved in the idustry and start earning, from any device.  The risk to you is your initial investment.  Some blockchain networks are relatively mature, but most are not and could go to zero.`}</div>
             <div
               className={styles["long-form-text"]}
-            >{`That said, the returns can be well worth that risk.  We want to help you make smart bets so you can make responsible investments in high-potential projects and get the most out of this emerging tech.`}</div>
+            >{`That said, the returns can be well worth that risk.  We want to help you make responsible investments in high-potential projects and get the most out of this emerging tech.`}</div>
             <div
               className={styles["long-form-text"]}
             >{`The future can be a scary place, but it doesn’t have to be. Start staking for yourself today.`}</div>

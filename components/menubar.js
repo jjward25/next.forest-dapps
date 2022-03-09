@@ -13,7 +13,7 @@ export default function Menubar() {
           alt="the-forest"
           title={`the-forest`}
           className={styles["logo"]}
-          width="95px"
+          width="70px"
           height="20px"
         />
       </Link>

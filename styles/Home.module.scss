@@ -1,3 +1,5 @@
+@import "mixins";
+
 /** Home Wrap **/
 .content-wrap {
   width: 100vw;
@@ -45,7 +47,7 @@
 .header-img-text {
   color: white;
   line-height: 1.5;
-  font-size: 180%;
+  font-size: 100%;
   font-weight: 100;
   padding-left: 5%;
   padding-right: 5%;
@@ -58,24 +60,26 @@
 /** Summary Blurbs**/
 .summary-blurb-wrap {
   width: 100%;
-  height: 45vh;
+  height: 50vh;
   display: flex;
-  padding-bottom: 3.5%;
-  padding-top: 3.5%;
-  margin: auto;
+  margin: 50px auto;
 }
 .summary-blurb-container {
-  width: 55%;
-  max-height: 85%;
-  height: 85%;
+  height: 100%;
+  width: 75%;
   margin: auto;
   border: 2px #557a95 solid;
   border-radius: 0%;
 
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  padding: 1.5%;
+  justify-content: space-evenly;
+
+  @include for-tablet-landscape-up {
+    width: 55%;
+    max-height: 85%;
+    height: 85%;
+  }
 }
 .summary-blurb-header {
   font-size: 125%;
@@ -83,10 +87,13 @@
   text-align: center;
 }
 .summary-blurb-text {
-  font-size: 100%;
+  font-size: 85%;
   text-align: left;
   padding-left: 5%;
   padding-right: 5%;
+  @include for-tablet-landscape-up {
+    font-size: 100%;
+  }
 }
 
 /** Long form text **/
@@ -102,7 +109,7 @@
   max-width: 100%;
   display: flex;
   flex-direction: column;
-  margin: auto;
+  margin: 0 auto 35px auto;
 }
 .long-form-header {
   font-size: 125%;
@@ -111,6 +118,7 @@
   padding-right: 7.5%;
   text-align: left;
   padding-bottom: 1.5%;
+  margin-bottom: 15px;
 }
 .long-form-text {
   font-size: 125%;
@@ -118,6 +126,7 @@
   padding-left: 7.5%;
   padding-right: 7.5%;
   padding-bottom: 1.5%;
+  margin-bottom: 15px;
 }
 
 .footer a {
@@ -205,16 +214,4 @@
 .logo {
   height: 1em;
   margin-left: 0.5rem;
-}
-
-@media (min-width: 660px) {
-  .header-img-text {
-    font-size: 120%;
-  }
-  .summary-blurb-text {
-    font-size: 88%;
-  }
-  .summary-blurb-container {
-    justify-content: space-around;
-  }
 }

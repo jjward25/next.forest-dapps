@@ -45,15 +45,7 @@ function DappCategories() {
                     >
                       <Link href="/projectpage" passHref>
                         <div className={styles["card-body"]}>
-                          <div
-                            style={{
-                              width: "100%",
-                              height: "100%",
-                              display: "flex",
-                              justifyContent: "space-around",
-                              marginBottom: "15px",
-                            }}
-                          >
+                          <div className={styles["project-logo"]}>
                             <Image
                               src={dapp.Logo}
                               alt="Logo"

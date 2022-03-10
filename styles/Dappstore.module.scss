@@ -36,11 +36,11 @@
 .carousel-wrap {
   display: flex;
   overflow: scroll;
-  height: 420px;
+  height: auto;
   z-index: 0;
 
   @include for-tablet-landscape-up {
-    margin: 0;
+    margin: 15px 0;
   }
 }
 .carousel-wrap::-webkit-scrollbar {
@@ -55,6 +55,9 @@
   border: 5px rgb(8, 63, 8) double;
   border-radius: 8px;
   margin-right: 35px;
+  margin-bottom: 5px;
+  box-shadow: 3px 3px 8px;
+
   @include for-tablet-landscape-up {
     margin: 0 2.5vw 0 0;
   }
@@ -71,8 +74,8 @@
 .project-logo {
   max-width: 150px;
   max-height: 90px;
-  margin: 0 auto;
-  margin-bottom: 10%;
+  margin: 10px auto 20px auto;
+  position: relative;
 }
 
 .project-title,

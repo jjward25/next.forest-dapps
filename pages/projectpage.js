@@ -110,7 +110,7 @@ function DappPage() {
                   margin: "2.5% 0 1% 0",
                 }}
               >
-                <div style={{ margin: "auto", marginLeft: "0" }}>
+                <div className={styles["primary-audience"]}>
                   Primary Audience:
                 </div>
                 <div
@@ -192,7 +192,7 @@ function DappPage() {
                 STAKE
               </div>
             </div>
-            <div className={styles["statbar-right"]}>
+            <div className={styles["statbar-left2"]}>
               <p style={{ margin: "0" }}>
                 <strong>USAGE TRANSACTIONS (24H): 24,332</strong>
               </p>

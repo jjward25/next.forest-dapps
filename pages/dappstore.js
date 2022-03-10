@@ -70,23 +70,8 @@ function DappCategories() {
                   );
                 })}
             </div>
-            <div
-              style={{
-                backgroundColor: "lightgrey",
-                height: "400px",
-                width: "1.5vw",
-                zIndex: "2",
-                marginLeft: "1vw",
-                display: "flex",
-                justifyContent: "space-around",
-              }}
-            >
-              <Image
-                alt=""
-                src="/right-carrot.png"
-                height={"227"}
-                width={"222"}
-              ></Image>
+            <div className={styles["right-carrot"]}>
+              <Image alt="" src="/right-carrot.png" layout="fill" />
             </div>
           </div>
 
@@ -110,23 +95,8 @@ function DappCategories() {
                   );
                 })}
             </div>
-            <div
-              style={{
-                backgroundColor: "lightgrey",
-                height: "400px",
-                width: "1.5vw",
-                zIndex: "2",
-                marginLeft: "1vw",
-                display: "flex",
-                justifyContent: "space-around",
-              }}
-            >
-              <Image
-                alt=""
-                src="/right-carrot.png"
-                height={"227"}
-                width={"222"}
-              ></Image>
+            <div className={styles["right-carrot"]}>
+              <Image alt="" src="/right-carrot.png" layout="fill" />
             </div>
           </div>
 
@@ -152,23 +122,8 @@ function DappCategories() {
                   );
                 })}
             </div>
-            <div
-              style={{
-                backgroundColor: "lightgrey",
-                height: "400px",
-                width: "1.5vw",
-                zIndex: "2",
-                marginLeft: "1vw",
-                display: "flex",
-                justifyContent: "space-around",
-              }}
-            >
-              <Image
-                alt=""
-                src="/right-carrot.png"
-                height={"227"}
-                width={"222"}
-              ></Image>
+            <div className={styles["right-carrot"]}>
+              <Image alt="" src="/right-carrot.png" layout="fill" />
             </div>
           </div>
 
@@ -192,23 +147,8 @@ function DappCategories() {
                   );
                 })}
             </div>
-            <div
-              style={{
-                backgroundColor: "lightgrey",
-                height: "400px",
-                width: "1.5vw",
-                zIndex: "2",
-                marginLeft: "1vw",
-                display: "flex",
-                justifyContent: "space-around",
-              }}
-            >
-              <Image
-                alt=""
-                src="/right-carrot.png"
-                height={"227"}
-                width={"222"}
-              ></Image>
+            <div className={styles["right-carrot"]}>
+              <Image alt="" src="/right-carrot.png" layout="fill" />
             </div>
           </div>
 
@@ -234,23 +174,8 @@ function DappCategories() {
                   );
                 })}
             </div>
-            <div
-              style={{
-                backgroundColor: "lightgrey",
-                height: "400px",
-                width: "1.5vw",
-                zIndex: "2",
-                marginLeft: "1vw",
-                display: "flex",
-                justifyContent: "space-around",
-              }}
-            >
-              <Image
-                alt=""
-                src="/right-carrot.png"
-                height={"227"}
-                width={"222"}
-              ></Image>
+            <div className={styles["right-carrot"]}>
+              <Image alt="" src="/right-carrot.png" layout="fill" />
             </div>
           </div>
         </div>

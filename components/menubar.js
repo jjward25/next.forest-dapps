@@ -7,15 +7,15 @@ export default function Menubar() {
     <div className={styles["menubar"]}>
       <div className={styles["menubar-overlay"]}></div>
 
-      <Link href="/" className={styles["logo-wrap"]} passHref>
-        <Image
-          src="/logo-nobg.png"
-          alt="the-forest"
-          title={`the-forest`}
-          className={styles["logo"]}
-          width="70px"
-          height="20px"
-        />
+      <Link href="/" passHref>
+        <div className={styles["logo-wrap"]}>
+          <Image
+            src="/logo-nobg.png"
+            alt="the-forest"
+            title={`the-forest`}
+            layout="fill"
+          />
+        </div>
       </Link>
 
       <div className={styles["menu-button-wrap"]}>

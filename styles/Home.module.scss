@@ -88,6 +88,9 @@
   font-size: 125%;
   font-weight: bold;
   text-align: center;
+  @include for-tablet-landscape-up {
+    font-size: 25px;
+  }
 }
 .summary-blurb-text {
   font-size: 85%;
@@ -95,7 +98,7 @@
   padding-left: 5%;
   padding-right: 5%;
   @include for-tablet-landscape-up {
-    font-size: 100%;
+    font-size: 20px;
   }
 }
 
@@ -122,6 +125,9 @@
   text-align: left;
   padding-bottom: 1.5%;
   margin-bottom: 15px;
+  @include for-tablet-landscape-up {
+    font-size: 30px;
+  }
 }
 .long-form-text {
   font-size: 105%;
@@ -130,6 +136,9 @@
   padding-right: 7.5%;
   padding-bottom: 1.5%;
   margin-bottom: 15px;
+  @include for-tablet-landscape-up {
+    font-size: 25px;
+  }
 }
 
 .footer a {

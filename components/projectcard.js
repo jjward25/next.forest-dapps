@@ -26,8 +26,6 @@ export default function ProjectCard(props) {
           <Image src={props.dapp.Logo} alt="Logo" width="140px" height="70px" />
         </div>
         <div className={styles["project-title"]}>{props.dapp.Project}</div>
-        <div className={styles["meta-title"]}>Category</div>
-        <div className={styles["project-detail"]}>{props.dapp.Category}</div>
         <div className={styles["meta-title"]}>Focus</div>
         <div className={styles["project-detail"]}>{props.dapp.Focus}</div>
       </div>

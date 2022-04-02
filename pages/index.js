@@ -37,9 +37,9 @@ export default function HomeContent() {
                 feeling lost....
               </div>
               <div className={styles["header-img-text"]}>
-                Let us help you make sense of the forest and the trees, and show
-                you new ways to earn from and evaluate crypto applications both
-                as services, and as investments.
+                Let us help you make sense of the forest and the trees, by
+                showing you new ways to evaluate and engage with crypto
+                applications both as services, and as investments.
               </div>
             </div>
           </div>

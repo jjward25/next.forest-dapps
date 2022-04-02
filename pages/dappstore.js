@@ -4,6 +4,8 @@ import ProjectCard from "../components/projectcard";
 import dapps from "../public/dapps.json";
 import Link from "next/link";
 import Image from "next/image";
+import CategoryCard from "../components/categorycard";
+import Carousel from "../components/carousel";
 
 function DappCategories() {
   function setID(props) {
@@ -28,6 +30,12 @@ function DappCategories() {
           <div className={styles["disclaimer-full"]}>
             DISCLAIMER: SOME OF THESE SERVICES ARE NOT LIVE YET, AND ANY MARKET
             OPINIONS POSTED ON THIS SITE DO NOT CONSTITUTE ADVICE.
+          </div>
+
+          <div className={styles["all-carousel-wrap"]}>
+            {dapps.map((dapp) => {
+              <Carousel Category={dapp.Category} />;
+            })}
           </div>
 
           <div className={styles["carousel-header"]}>Featured Apps</div>

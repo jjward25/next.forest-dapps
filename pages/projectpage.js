@@ -1,16 +1,14 @@
 import styles from "../styles/Projectpage.module.scss";
 import MenuBar from "../components/menubar";
-
 import dapps from "../public/dappList.json";
 import Image from "next/image";
 
 function DappPage() {
   let dappid = [];
-
   if (typeof window !== "undefined") {
     dappid = JSON.parse(localStorage.getItem("projectID"));
   } else {
-    dappid = "Provider";
+    dappid = "Ethereum";
   }
   //console.log(dappid);
   let dapp = dapps.filter((dapp) => dapp.Provider === dappid)[0];

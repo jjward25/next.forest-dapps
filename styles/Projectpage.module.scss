@@ -60,11 +60,15 @@
   word-wrap: break-word;
 }
 .social-bar {
+  margin-bottom: 10px;
   display: flex;
   border-bottom: 1px solid $prim-green;
   border-top: 1px solid $prim-green;
   padding: 2.5% 0;
   justify-content: space-around;
+  @include for-tablet-landscape-up {
+    margin-bottom: 0;
+  }
 }
 .prj-pg-logo-wrap {
   margin: 10px auto;
@@ -73,16 +77,16 @@
   display: flex;
   justify-content: center;
 }
+.audience-wrap {
+  display: flex;
+  justify-content: space-between;
+  margin: 2.5% 10px 1% 10px;
+}
 .primary-audience {
   margin: auto;
   margin-left: 0;
   font-weight: 700;
   color: $prim-green;
-}
-.audience-wrap {
-  display: flex;
-  justify-content: space-between;
-  margin: 2.5% 0 1% 0;
 }
 .audience-tag {
   font-weight: bold;
@@ -97,23 +101,53 @@
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
 .actions-btn {
-  width: 100%;
+  display: none;
+  @include for-tablet-landscape-up {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    padding: 1% 0;
+    margin: 1% auto;
+    background-color: $green-highlight;
+    color: $bg-beige;
+    border: 1px solid $bg-beige;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  }
+}
+.title-wrap {
+  display: flex;
+}
+.actions-btn-mobile {
+  width: 50%;
   text-align: center;
   font-weight: bold;
   padding: 1% 0;
-  margin: 1% auto;
+  margin: auto;
   background-color: $green-highlight;
   color: $bg-beige;
   border: 1px solid $bg-beige;
   border-radius: 10px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  @include for-tablet-landscape-up {
+    display: none;
+  }
 }
+/** Top Right **/
 .project-top-right {
   width: 100vw;
-  padding: 0 1.5%;
+  padding: 0 10px;
   @include for-tablet-landscape-up {
     width: 55%;
     padding: 0 1.5%;
+  }
+}
+.app-description {
+  text-align: "left";
+  margin: 5px auto 20px auto;
+  @include for-tablet-landscape-up {
+    margin: auto;
   }
 }
 
@@ -137,7 +171,7 @@
   flex-direction: column;
   justify-content: space-around;
   text-align: left;
-  padding: 1% 2.5%;
+  padding: 20px 10px;
   border-bottom: 1px solid $green-highlight;
   max-width: 100%;
   width: 100%;
@@ -158,7 +192,7 @@
   flex-direction: column;
   justify-content: space-around;
   text-align: left;
-  padding: 1% 2.5%;
+  padding: 20px 10px;
   border-bottom: 1px solid $green-highlight;
   max-width: 100%;
   width: 100%;
@@ -202,7 +236,7 @@
   flex-direction: column;
   justify-content: space-around;
   text-align: left;
-  padding: 1% 2.5%;
+  padding: 20px 10px;
   border-bottom: 1px solid $prim-green;
   max-width: 100%;
   width: 100%;
@@ -230,7 +264,7 @@
 .screen-shots {
   width: 100%;
   border-bottom: 1px solid $prim-green;
-  padding: 1%;
+  padding: 20px 10px;
   @include for-tablet-landscape-up {
     width: 55%;
     border-right: 1px solid $prim-green;
@@ -240,6 +274,7 @@
 .project-reviews {
   width: 100%;
   display: flex;
+  padding: 20px 10px;
   @include for-tablet-landscape-up {
     width: 45%;
     display: flex;
@@ -255,11 +290,4 @@
   color: darkslategray;
   border: 2.5px solid rgb(192, 192, 192);
   margin-right: 2.5vw;
-}
-
-@media (max-width: 660px) {
-  /** GRAPHICS **/
-
-  .project-reviews {
-  }
 }

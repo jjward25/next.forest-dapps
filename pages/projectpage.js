@@ -42,7 +42,10 @@ function DappPage() {
                     layout="fixed"
                   />
                 </div>
-                <p className={styles["dapp-provider"]}>{dapp.Provider}</p>
+                <div className={styles["title-wrap"]}>
+                  <p className={styles["dapp-provider"]}>{dapp.Provider}</p>
+                  <div className={styles["actions-btn-mobile"]}>+ ACTIONS</div>
+                </div>
               </div>
               <div className={styles["social-bar"]}>
                 <Image
@@ -86,10 +89,7 @@ function DappPage() {
             </div>
 
             <div className={styles["project-top-right"]}>
-              <p style={{ fontWeight: "bold", textAlign: "left" }}>
-                {dapp.Project}
-              </p>
-              <p style={{ textAlign: "left" }}>{dapp.AppDescription}</p>
+              <p className={styles["app-description"]}>{dapp.AppDescription}</p>
             </div>
           </div>
 

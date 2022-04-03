@@ -12,12 +12,12 @@ function DappPage() {
   } else {
     dappid = "Provider";
   }
-  console.log(dappid);
+  //console.log(dappid);
   let dapp = dapps.filter((dapp) => dapp.Provider === dappid)[0];
   if (dapp === "undefined") {
-    dapp = dapps.filter((dapp) => dapp.Provider === 1);
+    dapp = dapps.filter((dapp) => dapp.Provider === "Ethereum");
   }
-  console.log(dapp);
+  //console.log(dapp);
 
   return (
     <div className={styles["container"]}>

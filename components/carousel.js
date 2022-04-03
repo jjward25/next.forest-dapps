@@ -1,13 +1,14 @@
 import styles from "./Carousel.module.scss";
-import CategoryCard from "./categorycard";
-export default function Carousel() {
+import DappCard from "./dappcard";
+export default function Carousel(props) {
   return (
-    <div>
-      <div className={styles["carousel-header"]}>Featured Apps</div>
-      <div className={styles["horizontal-wrap"]} style={{ display: "flex" }}>
-        <div className={styles["carousel-cards-wrap"]}>
-          <CategoryCard />
-        </div>
+    <div className={styles["single-carousel"]}>
+      <div className={styles["carousel-header"]}>{props.Content.Category}</div>
+
+      <div className={styles["carousel-cards-wrap"]}>
+        {props.Content.DappList.map((dapp) => {
+          return <DappCard dapp={dapp} key={dapp.Provider} />;
+        })}
       </div>
     </div>
   );

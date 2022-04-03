@@ -1,6 +1,7 @@
 import styles from "../styles/Projectpage.module.scss";
 import MenuBar from "../components/menubar";
-import dapps from "../public/dapps.json";
+
+import dapps from "../public/dappList.json";
 import Image from "next/image";
 
 function DappPage() {
@@ -9,15 +10,13 @@ function DappPage() {
   if (typeof window !== "undefined") {
     dappid = JSON.parse(localStorage.getItem("projectID"));
   } else {
-    dappid = dapps[Math.floor(Math.random() * dapps.length)].ProjectID;
+    dappid = "Provider";
   }
-
-  let dapp = dapps.filter((dapp) => dapp.ProjectID === dappid)[0];
-
+  console.log(dappid);
+  let dapp = dapps.filter((dapp) => dapp.Provider === dappid)[0];
   if (dapp === "undefined") {
-    dapp = dapps.filter((dapp) => dapp.ProjectID === 1);
+    dapp = dapps.filter((dapp) => dapp.Provider === 1);
   }
-
   console.log(dapp);
 
   return (
@@ -36,42 +35,16 @@ function DappPage() {
               <div className={styles["project-header"]}>
                 <div className={styles["prj-pg-logo-wrap"]}>
                   <Image
-                    src={dapp.Logo}
+                    src={dapp.AppLogo}
                     alt="prj-logo"
                     width="220px"
                     height="110px"
                     layout="fixed"
                   />
                 </div>
-                <p
-                  style={{
-                    fontSize: "40px",
-                    lineHeight: "70px",
-                    fontWeight: "bold",
-                    overflow: "wrap",
-                    color: "white",
-                    width: "100%",
-                    textAlign: "left",
-                    paddingLeft: "2.5%",
-                    margin: "0",
-                    webkitTextStrokeWidth: "2.5px",
-                    WebkitTextStrokeColor: "black",
-                    letterSpacing: "4px",
-                    wordWrap: "break-word",
-                  }}
-                >
-                  {dapp.Project}
-                </p>
+                <p className={styles["dapp-provider"]}>{dapp.Provider}</p>
               </div>
-              <div
-                style={{
-                  display: "flex",
-                  borderBottom: "1px solid forestgreen",
-                  borderTop: "1px solid forestgreen",
-                  padding: "2.5% 0",
-                  justifyContent: "space-around",
-                }}
-              >
+              <div className={styles["social-bar"]}>
                 <Image
                   src="/Github.png"
                   alt="Github"
@@ -103,65 +76,33 @@ function DappPage() {
                   height="30px"
                 />
               </div>
-              <div
-                style={{
-                  display: "flex",
-                  justifyContent: "space-between",
-                  margin: "2.5% 0 1% 0",
-                }}
-              >
+              <div className={styles["audience-wrap"]}>
                 <div className={styles["primary-audience"]}>
                   Primary Audience:
                 </div>
-                <div
-                  style={{
-                    fontWeight: "bold",
-                    width: "40%",
-                    padding: "1% 0%",
-                    border: "1px solid forestgreen",
-                    margin: "0",
-                    backgroundColor: "forestgreen",
-                    color: "white",
-                  }}
-                >
-                  Businesses
-                </div>
+                <div className={styles["audience-tag"]}>{dapp.Audience}</div>
               </div>
-              <div
-                style={{
-                  width: "100%",
-                  fontWeight: "bold",
-                  padding: "1% 0",
-                  border: "1px solid forestgreen",
-                  margin: "1% auto",
-                  backgroundColor: "forestgreen",
-                  color: "white",
-                }}
-              >
-                + ACTIONS
-              </div>
+              <div className={styles["actions-btn"]}>+ ACTIONS</div>
             </div>
 
             <div className={styles["project-top-right"]}>
               <p style={{ fontWeight: "bold", textAlign: "left" }}>
                 {dapp.Project}
               </p>
-              <p
-                style={{ textAlign: "left" }}
-              >{`Imagine an audio service like spotify where the music was uploaded and always attributed to the author.  So creators get more than 12% of their industry's profits, the current estimate for musical artists.`}</p>
+              <p style={{ textAlign: "left" }}>{dapp.AppDescription}</p>
             </div>
           </div>
 
           <div className={styles["prj-pg-stat-bar"]}>
             <div className={styles["statbar-left"]}>
               <p style={{ margin: "0" }}>
-                <strong>Market Cap:</strong> $8,954,022,767
+                <strong>Market Cap:</strong> {dapp.MarketCap}
               </p>
               <p style={{ margin: "0" }}>
-                <strong>Cap Rank:</strong> 20 ^
+                <strong>Cap Rank:</strong> {dapp.MarketCapRank} ^
               </p>
               <p style={{ margin: "0" }}>
-                <strong>Current Price:</strong> $8.95
+                <strong>Current Price:</strong> {dapp.Price}
               </p>
               <p style={{ margin: "0" }}>
                 <strong>Trading Volume:</strong> 22,767
@@ -175,22 +116,9 @@ function DappPage() {
                 <strong>MIN. TO STAKE: 10 TOKENS</strong>
               </p>
               <p style={{ margin: "0" }}>
-                <strong>TOTAL STAKED: $94M</strong>
+                <strong>TOTAL STAKED: {dapp.TVL}</strong>
               </p>
-              <div
-                style={{
-                  fontWeight: "bold",
-                  width: "100%",
-                  padding: "1% 0%",
-                  border: "1px solid forestgreen",
-                  margin: "0",
-                  backgroundColor: "forestgreen",
-                  color: "white",
-                  textAlign: "center",
-                }}
-              >
-                STAKE
-              </div>
+              <div className={styles["stake-btn"]}>STAKE</div>
             </div>
             <div className={styles["statbar-left2"]}>
               <p style={{ margin: "0" }}>
@@ -202,20 +130,7 @@ function DappPage() {
               <p style={{ margin: "0" }}>
                 <strong>ACTIVE MONTHLY USERS: 8,492</strong>
               </p>
-              <div
-                style={{
-                  fontWeight: "bold",
-                  width: "100%",
-                  padding: "1% 0%",
-                  border: "1px solid forestgreen",
-                  margin: "0",
-                  backgroundColor: "forestgreen",
-                  color: "white",
-                  textAlign: "center",
-                }}
-              >
-                DEMO
-              </div>
+              <div className={styles["demo-btn"]}>DEMO</div>
             </div>
             <div className={styles["statbar-right"]}>
               <p style={{ margin: "0" }}>
@@ -226,34 +141,23 @@ function DappPage() {
               </p>
               <div style={{ display: "flex", flexWrap: "wrap" }}>
                 <strong style={{ marginRight: "2.5%" }}>TAGS:</strong>
-                <div
-                  style={{
-                    fontWeight: "bold",
-                    width: "auto",
-                    padding: "1% 2.5%",
-                    border: "1px solid forestgreen",
-                    margin: "0 2.5% 2.5% 0",
-                    backgroundColor: "forestgreen",
-                    color: "white",
-                    textAlign: "center",
-                  }}
-                >
-                  REMITTANCES
-                </div>
-                <div
-                  style={{
-                    fontWeight: "bold",
-                    width: "auto",
-                    padding: "1% 2.5%",
-                    border: "1px solid forestgreen",
-                    margin: "0 2.5% 2.5% 0",
-                    backgroundColor: "forestgreen",
-                    color: "white",
-                    textAlign: "center",
-                  }}
-                >
-                  PAYMENTS
-                </div>
+
+                {dapp.Tags.map((tag) => {
+                  <div
+                    style={{
+                      fontWeight: "bold",
+                      width: "auto",
+                      padding: "1% 2.5%",
+                      border: "1px solid forestgreen",
+                      margin: "0 2.5% 2.5% 0",
+                      backgroundColor: "forestgreen",
+                      color: "white",
+                      textAlign: "center",
+                    }}
+                  >
+                    {tag}
+                  </div>;
+                })}
               </div>
             </div>
           </div>

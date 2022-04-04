@@ -93,12 +93,11 @@
   text-align: center;
   width: auto;
   padding: 5px 25px;
-  border: 1px solid $bg-beige;
   border-radius: 10px;
   margin: 0;
   background-color: $green-highlight;
   color: $bg-beige;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 5px $prim-green;
 }
 .actions-btn {
   display: none;
@@ -111,9 +110,9 @@
     margin: 1% auto;
     background-color: $green-highlight;
     color: $bg-beige;
-    border: 1px solid $bg-beige;
+
     border-radius: 10px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 5px $prim-green;
   }
 }
 .title-wrap {
@@ -129,7 +128,7 @@
   color: $bg-beige;
   border: 1px solid $bg-beige;
   border-radius: 10px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 5px $prim-green;
   @include for-tablet-landscape-up {
     display: none;
   }
@@ -215,11 +214,11 @@
   background-color: $green-highlight;
   text-align: center;
   color: $bg-beige;
-  border: 1px solid $bg-beige;
   border-radius: 10px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 5px $prim-green;
   @include for-tablet-landscape-up {
     margin: 0;
+    box-shadow: 0px 0px 5px $prim-green;
   }
 }
 .demo-btn {
@@ -230,10 +229,12 @@
   background-color: $green-highlight;
   text-align: center;
   color: $bg-beige;
-  border: 1px solid $bg-beige;
+
   border-radius: 10px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 5px $prim-green;
   @include for-tablet-landscape-up {
+    box-shadow: 0px 0px 5px $prim-green;
+
     margin: 0;
   }
 }

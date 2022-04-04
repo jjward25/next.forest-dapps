@@ -18,12 +18,12 @@
 }
 
 .disclaimer-full {
-  background-color: lightgrey;
+  background-color: $adobe;
   font-weight: bold;
   font-size: 110%;
   text-align: center;
-  color: darkslategray;
-  border: 2.5px solid rgb(192, 192, 192);
+  color: white;
+  border: 2.5px solid $prim-green;
   margin-right: 2.5vw;
 }
 .all-carousel-wrap {

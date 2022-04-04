@@ -1,4 +1,4 @@
-import styles from "../styles/Menubar.module.scss";
+import styles from "./Menubar.module.scss";
 import Link from "next/link";
 import Image from "next/image";
 

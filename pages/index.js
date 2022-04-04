@@ -32,13 +32,12 @@ export default function HomeContent() {
           <div className={styles["header-img-text-overlay"]}>
             <div className={styles["header-img-text-wrap"]}>
               <div className={styles["header-img-text"]}>
-                Navigating new technologies, and the seemingly unlimited
-                early-investment opportunities in crypto can leave a person
-                feeling lost....
+                New technology and seemingly unlimited early-investment
+                opportunities in crypto can leave a person feeling lost....
               </div>
               <div className={styles["header-img-text"]}>
                 Let us help you make sense of the forest and the trees, by
-                showing you new ways to evaluate and engage with crypto
+                showing you new ways to evaluate and engage with Web3
                 applications both as services, and as investments.
               </div>
             </div>

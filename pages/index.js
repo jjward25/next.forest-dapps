@@ -3,17 +3,6 @@ import styles from "../styles/Home.module.scss";
 import MenuBar from "../components/menubar";
 import Image from "next/image";
 
-/*import { layoutGenerator } from 'react-break';*/
-/*
-const layout = layoutGenerator({
-  mobile: 0,
-  phablet: 550,
-  tablet: 787,
-  desktop: 992,
-});
-
-const OnAtLeastTablet = layout.isAtLeast('tablet');*/
-
 export default function HomeContent() {
   return (
     <div className={styles["container"]}>

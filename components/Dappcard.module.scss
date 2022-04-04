@@ -7,7 +7,7 @@
   min-width: 300px;
   height: 300px;
   float: left;
-  perspective: 500px;
+  perspective: 900px;
   @include for-tablet-landscape-up {
     margin: 20px 20px;
     min-width: 300px;
@@ -19,8 +19,8 @@
   position: absolute;
   width: 300px;
   height: 300px;
-  box-shadow: 0px 0px 10px $prim-green;
-  border-radius: 10px;
+  box-shadow: 0px 0px 5px $prim-green;
+  border-radius: 4px;
   transition: transform 1s;
   transform-style: preserve-3d;
 }

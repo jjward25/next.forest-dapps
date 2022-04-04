@@ -38,7 +38,7 @@ export default function HomeContent() {
               <div className={styles["header-img-text"]}>
                 Let us help you make sense of the forest and the trees, by
                 showing you new ways to evaluate and engage with Web3
-                applications both as services, and as investments.
+                applications both as services, and investments.
               </div>
             </div>
           </div>
@@ -50,17 +50,17 @@ export default function HomeContent() {
             <li className={styles["summary-blurb-text"]}>
               The value of a crypto asset is largely based on adoption, not
               traditional financial metrics, so we provide usage-focused charts
-              that provide insight into the project as both a service and an
-              investment.
+              with insight into how those metrics are typically interpreted.
             </li>
             <li className={styles["summary-blurb-text"]}>
-              Our “Dapp Store” layout provides the perfect context for
-              evaluating these projects as real-world solutions.
+              Our “Dapp Store” layout provides the perfect context for newcomers
+              to evaluate projects as real-world solutions.
             </li>
             <li className={styles["summary-blurb-text"]}>
               Our goal is to maximize knowledge to minimize risk... to give you
               all the information you need as an individual or business manager
-              to make the right call on vendors and investments.
+              to make the right call on Web3 vendors and early-stage
+              investments.
             </li>
           </div>
         </div>

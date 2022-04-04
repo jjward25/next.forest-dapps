@@ -35,9 +35,12 @@ export default function HomeContent() {
               </div>
               <div className={styles["header-img-text"]}>
                 Let us help you make sense of the forest and the trees, by
-                showing you new ways to <b>evaluate</b> and <b>engage</b> with
-                Web3 applications both as <b>services</b>, and{" "}
-                <b>investments</b>.
+                showing you new ways to{" "}
+                <b>
+                  evaluate and engage with Web3 applications both as services,
+                  and investments
+                </b>
+                .
               </div>
             </div>
           </div>

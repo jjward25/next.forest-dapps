@@ -443,7 +443,7 @@
   },
   {
     "Provider": "R3",
-    "Category": "Capital Markets",
+    "Category": "Decentralized Finance",
     "CategoryPriority": 3,
     "CategoryDescription": "\"DeFi\" services ranging from Banking, Clearing & Settlement, Exchanges, Wallets, and Yield Farmers.",
     "Tags": ["Regulated Markets", " Clearing & Settlement"],
@@ -477,7 +477,7 @@
   },
   {
     "Provider": "Corda",
-    "Category": "Capital Markets",
+    "Category": "Decentralized Finance",
     "CategoryPriority": 3,
     "CategoryDescription": "\"DeFi\" services ranging from Banking, Clearing & Settlement, Exchanges, Wallets, and Yield Farmers.",
     "Tags": ["Business-to-Business"],
@@ -511,7 +511,7 @@
   },
   {
     "Provider": "Digital Asset Holdings",
-    "Category": "Capital Markets",
+    "Category": "Decentralized Finance",
     "CategoryPriority": 3,
     "CategoryDescription": "\"DeFi\" services ranging from Banking, Clearing & Settlement, Exchanges, Wallets, and Yield Farmers.",
     "Tags": ["Clearing & Settlement", " Tokenization"],
@@ -545,7 +545,7 @@
   },
   {
     "Provider": "Blockfi",
-    "Category": "Capital Markets",
+    "Category": "Decentralized Finance",
     "CategoryPriority": 3,
     "CategoryDescription": "\"DeFi\" services ranging from Banking, Clearing & Settlement, Exchanges, Wallets, and Yield Farmers.",
     "Tags": ["Loans", " Credit", " Trading"],
@@ -579,7 +579,7 @@
   },
   {
     "Provider": "Coinbase",
-    "Category": "Capital Markets",
+    "Category": "Decentralized Finance",
     "CategoryPriority": 3,
     "CategoryDescription": "\"DeFi\" services ranging from Banking, Clearing & Settlement, Exchanges, Wallets, and Yield Farmers.",
     "Tags": ["Tags", " Tags", " Tags"],
@@ -613,7 +613,7 @@
   },
   {
     "Provider": "MetaMask",
-    "Category": "Capital Markets",
+    "Category": "Decentralized Finance",
     "CategoryPriority": 3,
     "CategoryDescription": "\"DeFi\" services ranging from Banking, Clearing & Settlement, Exchanges, Wallets, and Yield Farmers.",
     "Tags": ["Tags", " Tags", " Tags"],
@@ -647,7 +647,7 @@
   },
   {
     "Provider": "Curve.Fi",
-    "Category": "Capital Markets",
+    "Category": "Decentralized Finance",
     "CategoryPriority": 3,
     "CategoryDescription": "\"DeFi\" services ranging from Banking, Clearing & Settlement, Exchanges, Wallets, and Yield Farmers.",
     "Tags": ["Peer-to-Peer Lending", " Staking & Yield Farming"],
@@ -681,7 +681,7 @@
   },
   {
     "Provider": "Stellar",
-    "Category": "Capital Markets",
+    "Category": "Decentralized Finance",
     "CategoryPriority": 3,
     "CategoryDescription": "\"DeFi\" services ranging from Banking, Clearing & Settlement, Exchanges, Wallets, and Yield Farmers.",
     "Tags": ["Payment Processing"],
@@ -715,7 +715,7 @@
   },
   {
     "Provider": "Hex",
-    "Category": "Capital Markets",
+    "Category": "Decentralized Finance",
     "CategoryPriority": 3,
     "CategoryDescription": "\"DeFi\" services ranging from Banking, Clearing & Settlement, Exchanges, Wallets, and Yield Farmers.",
     "Tags": ["Certificate-of-Deposits"],

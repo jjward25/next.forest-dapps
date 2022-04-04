@@ -14,9 +14,17 @@ export default function HomeContent() {
 
       <main className={styles["content-wrap"]}>
         <MenuBar />
-
-        <div className={styles["header-image-wrap"]}>
-          <div className={styles["header-img-cover"]}></div>
+        <div className={styles["main-content-container"]}>
+          <div className={styles["main-image-overlay"]}>
+            <div className={styles["main-image-wrap"]}>
+              <Image
+                src="/the-forest.png"
+                alt="the-forest"
+                title={`the-forest`}
+                layout="fill"
+              />
+            </div>
+          </div>
 
           <div className={styles["header-img-text-overlay"]}>
             <div className={styles["header-img-text-wrap"]}>

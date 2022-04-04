@@ -22,6 +22,7 @@ export default function HomeContent() {
                 alt="the-forest"
                 title={`the-forest`}
                 layout="fill"
+                priority
               />
             </div>
           </div>

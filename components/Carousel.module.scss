@@ -25,16 +25,20 @@
   display: flex;
 }
 .scroll-button {
-  height: 150px;
-  margin: auto 20px;
-  box-shadow: 0px 0px 2px $prim-green;
-  border: none;
-  border: 1px solid $prim-green;
-  border-radius: 10px;
-  &:hover {
-    background-color: $prim-green;
-    color: white;
+  display: none;
+  @include for-tablet-landscape-up {
+    display: block;
+    height: 150px;
+    margin: auto 20px;
+    box-shadow: 0px 0px 2px $prim-green;
+    border: none;
+    border: 1px solid $prim-green;
     border-radius: 10px;
+    &:hover {
+      background-color: $prim-green;
+      color: white;
+      border-radius: 10px;
+    }
   }
 }
 .carousel-cards-wrap {

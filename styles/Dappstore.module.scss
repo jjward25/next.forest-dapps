@@ -15,7 +15,10 @@
   display: flex;
   flex-direction: column;
   margin: 0 2.5% 0 5%;
-  padding-top: 11vh;
+  padding-top: 75px;
+  @include for-tablet-landscape-up {
+    padding-top: 115px;
+  }
 }
 
 .disclaimer-full {

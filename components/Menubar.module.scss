@@ -4,7 +4,7 @@
 .menubar {
   position: fixed;
   z-index: 5;
-  height: 8vh;
+  height: 80px;
   width: 100%;
   max-width: 100vw;
   display: flex;
@@ -22,9 +22,8 @@
   position: absolute;
 }
 .menubar-img-wrap {
-  position: relative;
   opacity: 10;
-  height: 100vh;
+  height: 80px;
   width: 100vw;
 }
 

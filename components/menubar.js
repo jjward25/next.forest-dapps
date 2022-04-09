@@ -9,7 +9,7 @@ export default function Menubar() {
         <div className={styles["menubar-img-overlay"]}>
           <div className={styles["menubar-img-wrap"]}>
             <Image
-              src="/the-forest.png"
+              src="/forest-header.png"
               alt="the-forest"
               title={`the-forest`}
               layout="fill"

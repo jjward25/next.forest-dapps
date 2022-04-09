@@ -11,7 +11,6 @@
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  padding-top: 8.5vh;
   background-color: white;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
@@ -32,12 +31,14 @@
   border-right: none;
   display: flex;
   flex-direction: column;
+  padding-top: 70px;
   @include for-tablet-landscape-up {
     width: 45%;
     display: flex;
     flex-direction: column;
     border-right: 1px solid $prim-green;
-    padding: 0 1.5% 1% 1.5%;
+    padding: 0;
+    padding-top: 100px;
   }
 }
 
@@ -46,18 +47,23 @@
   flex-direction: column;
 }
 .dapp-provider {
-  font-size: 40px;
-  line-height: 70px;
+  font-size: 25px;
+  line-height: 30px;
   font-weight: bold;
   overflow: wrap;
   color: $prim-green;
-  width: 100%;
-  text-align: left;
+  width: calc(100% - 35px);
+  text-align: center;
   padding-left: 2.5%;
   margin: 0;
 
   letter-spacing: 4px;
   word-wrap: break-word;
+  @include for-tablet-landscape-up {
+    font-size: 40px;
+    line-height: 70px;
+    width: 100%;
+  }
 }
 .social-bar {
   margin-bottom: 10px;
@@ -72,42 +78,63 @@
 }
 .prj-pg-logo-wrap {
   margin: 10px auto;
-  width: 100%;
-  height: 100%;
+  width: 110px;
+  height: 55px;
   display: flex;
   justify-content: center;
+  position: relative;
+  @include for-tablet-landscape-up {
+    width: 220px;
+    height: 110px;
+  }
 }
 .audience-wrap {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   margin: 2.5% 10px 1% 10px;
+  @include for-tablet-landscape-up {
+    margin: 10px 0;
+  }
 }
 .primary-audience {
-  margin: auto;
-  margin-left: 0;
+  margin: auto 15px auto 15px;
   font-weight: 700;
   color: $prim-green;
+  @include for-tablet-landscape-up {
+    font-size: 20px;
+    margin: 0 15px 20px 0;
+    border-bottom: 1px solid $prim-green;
+  }
 }
 .audience-tag {
   font-weight: bold;
   text-align: center;
   width: auto;
+  height: 100%;
   padding: 5px 25px;
   border-radius: 10px;
   margin: 0;
-  background-color: $green-highlight;
-  color: $bg-beige;
-  box-shadow: 0px 0px 5px $prim-green;
+  background-color: $bg-beige;
+  color: $prim-green;
+  border: 1px solid $prim-green;
+  &:hover {
+    background-color: $prim-green;
+    color: $bg-beige;
+  }
+}
+.action-btn-wrap {
+  padding: 20px 0;
+  display: flex;
 }
 .actions-btn {
   display: none;
   @include for-tablet-landscape-up {
     display: block;
-    width: 100%;
+    width: 100px;
     text-align: center;
     font-weight: bold;
     padding: 1% 0;
-    margin: 1% auto;
+    margin: auto;
     background-color: $green-highlight;
     color: $bg-beige;
 
@@ -117,13 +144,18 @@
 }
 .title-wrap {
   display: flex;
+  max-width: 100vw;
+  margin-bottom: 20px;
+  @include for-tablet-landscape-up {
+    margin-bottom: 10px;
+  }
 }
 .actions-btn-mobile {
-  width: 50%;
+  width: 25px;
+  height: 25px;
   text-align: center;
   font-weight: bold;
-  padding: 1% 0;
-  margin: auto;
+  margin: auto 0;
   background-color: $green-highlight;
   color: $bg-beige;
   border: 1px solid $bg-beige;
@@ -137,9 +169,11 @@
 .project-top-right {
   width: 100vw;
   padding: 0 10px;
+
   @include for-tablet-landscape-up {
     width: 55%;
     padding: 0 1.5%;
+    padding-top: 100px;
   }
 }
 .app-description {
@@ -147,6 +181,7 @@
   margin: 5px auto 20px auto;
   @include for-tablet-landscape-up {
     margin: auto;
+    font-size: 20px;
   }
 }
 
@@ -171,7 +206,7 @@
   justify-content: space-around;
   text-align: left;
   padding: 20px 10px;
-  border-bottom: 1px solid $green-highlight;
+  border-bottom: 1px solid $prim-green;
   max-width: 100%;
   width: 100%;
   @include for-tablet-landscape-up {
@@ -180,7 +215,7 @@
     justify-content: space-around;
     text-align: left;
     padding: 0 2.5%;
-    border-right: 1px solid $green-highlight;
+    border-right: 1px solid $prim-green;
     border-bottom: none;
     width: 20%;
   }
@@ -192,7 +227,7 @@
   justify-content: space-around;
   text-align: left;
   padding: 20px 10px;
-  border-bottom: 1px solid $green-highlight;
+  border-bottom: 1px solid $prim-green;
   max-width: 100%;
   width: 100%;
   @include for-tablet-landscape-up {

@@ -32,19 +32,14 @@ function DappPage() {
             <div className={styles["project-top-left"]}>
               <div className={styles["project-header"]}>
                 <div className={styles["prj-pg-logo-wrap"]}>
-                  <Image
-                    src={dapp.AppLogo}
-                    alt="prj-logo"
-                    width="220px"
-                    height="110px"
-                    layout="fixed"
-                  />
+                  <Image src={dapp.AppLogo} alt="prj-logo" layout="fill" />
                 </div>
                 <div className={styles["title-wrap"]}>
                   <p className={styles["dapp-provider"]}>{dapp.Provider}</p>
-                  <div className={styles["actions-btn-mobile"]}>+ ACTIONS</div>
+                  <div className={styles["actions-btn-mobile"]}>+</div>
                 </div>
               </div>
+
               <div className={styles["social-bar"]}>
                 <Image
                   src="/Github.png"
@@ -77,16 +72,25 @@ function DappPage() {
                   height="30px"
                 />
               </div>
+
+              <div className={styles["action-btn-wrap"]}>
+                <div className={styles["actions-btn"]}>ACTIONS</div>
+                <div className={styles["actions-btn"]} id="stake">
+                  STAKE
+                </div>
+                <div className={styles["actions-btn"]} id="demo">
+                  DEMO
+                </div>
+              </div>
+            </div>
+
+            <div className={styles["project-top-right"]}>
               <div className={styles["audience-wrap"]}>
                 <div className={styles["primary-audience"]}>
                   Primary Audience:
                 </div>
                 <div className={styles["audience-tag"]}>{dapp.Audience}</div>
               </div>
-              <div className={styles["actions-btn"]}>+ ACTIONS</div>
-            </div>
-
-            <div className={styles["project-top-right"]}>
               <p className={styles["app-description"]}>{dapp.AppDescription}</p>
             </div>
           </div>
@@ -100,7 +104,7 @@ function DappPage() {
                 <strong>Cap Rank:</strong> {dapp.MarketCapRank} ^
               </p>
               <p style={{ margin: "0" }}>
-                <strong>Current Price:</strong> {dapp.Price}
+                <strong>Monthly Active Users: </strong>8,492
               </p>
               <p style={{ margin: "0" }}>
                 <strong>Trading Volume:</strong> 22,767
@@ -111,32 +115,31 @@ function DappPage() {
                 <strong>APY: 45%</strong> AVG: 42.4%
               </p>
               <p style={{ margin: "0" }}>
-                <strong>MIN. TO STAKE: 10 TOKENS</strong>
+                <strong>Min. Tokens to Stake:</strong> 10 TOKENS
               </p>
               <p style={{ margin: "0" }}>
-                <strong>TOTAL STAKED: {dapp.TVL}</strong>
+                <strong>Current Price:</strong> {dapp.Price}
               </p>
-              <div className={styles["stake-btn"]}>STAKE</div>
+              <p style={{ margin: "0" }}>
+                <strong>TOTAL STAKED: </strong>
+                {dapp.TVL}
+              </p>
             </div>
             <div className={styles["statbar-left2"]}>
               <p style={{ margin: "0" }}>
-                <strong>USAGE TRANSACTIONS (24H): 24,332</strong>
+                <strong>Usage Transactions (24H): </strong>24,332
               </p>
               <p style={{ margin: "0" }}>
-                <strong>ACTIVE USERS (24H): 1,422</strong>
+                <strong>Active Users (24H): </strong>1,422
               </p>
-              <p style={{ margin: "0" }}>
-                <strong>ACTIVE MONTHLY USERS: 8,492</strong>
-              </p>
-              <div className={styles["demo-btn"]}>DEMO</div>
-            </div>
-            <div className={styles["statbar-right"]}>
               <p style={{ margin: "0" }}>
                 <strong>FOUNDERS:</strong> {dapp.Founders}
               </p>
               <p style={{ margin: "0" }}>
                 <strong>INVESTORS:</strong> {dapp.Investors}
               </p>
+            </div>
+            <div className={styles["statbar-right"]}>
               <div style={{ display: "flex", flexWrap: "wrap" }}>
                 <strong style={{ marginRight: "2.5%" }}>TAGS:</strong>
 

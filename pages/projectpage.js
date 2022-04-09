@@ -36,7 +36,6 @@ function DappPage() {
                 </div>
                 <div className={styles["title-wrap"]}>
                   <p className={styles["dapp-provider"]}>{dapp.Provider}</p>
-                  <div className={styles["actions-btn-mobile"]}>+</div>
                 </div>
               </div>
 
@@ -97,45 +96,45 @@ function DappPage() {
 
           <div className={styles["prj-pg-stat-bar"]}>
             <div className={styles["statbar-left"]}>
-              <p style={{ margin: "0" }}>
+              <p className={styles["statbar-title"]}>
                 <strong>Market Cap:</strong> {dapp.MarketCap}
               </p>
-              <p style={{ margin: "0" }}>
+              <p className={styles["statbar-title"]}>
                 <strong>Cap Rank:</strong> {dapp.MarketCapRank} ^
               </p>
-              <p style={{ margin: "0" }}>
+              <p className={styles["statbar-title"]}>
                 <strong>Monthly Active Users: </strong>8,492
               </p>
-              <p style={{ margin: "0" }}>
+              <p className={styles["statbar-title"]}>
                 <strong>Trading Volume:</strong> 22,767
               </p>
             </div>
             <div className={styles["statbar-left"]}>
-              <p style={{ margin: "0" }}>
+              <p className={styles["statbar-title"]}>
                 <strong>APY: 45%</strong> AVG: 42.4%
               </p>
-              <p style={{ margin: "0" }}>
+              <p className={styles["statbar-title"]}>
                 <strong>Min. Tokens to Stake:</strong> 10 TOKENS
               </p>
-              <p style={{ margin: "0" }}>
+              <p className={styles["statbar-title"]}>
                 <strong>Current Price:</strong> {dapp.Price}
               </p>
-              <p style={{ margin: "0" }}>
+              <p className={styles["statbar-title"]}>
                 <strong>TOTAL STAKED: </strong>
                 {dapp.TVL}
               </p>
             </div>
             <div className={styles["statbar-left2"]}>
-              <p style={{ margin: "0" }}>
+              <p className={styles["statbar-title"]}>
                 <strong>Usage Transactions (24H): </strong>24,332
               </p>
-              <p style={{ margin: "0" }}>
+              <p className={styles["statbar-title"]}>
                 <strong>Active Users (24H): </strong>1,422
               </p>
-              <p style={{ margin: "0" }}>
+              <p className={styles["statbar-title"]}>
                 <strong>FOUNDERS:</strong> {dapp.Founders}
               </p>
-              <p style={{ margin: "0" }}>
+              <p className={styles["statbar-title"]}>
                 <strong>INVESTORS:</strong> {dapp.Investors}
               </p>
             </div>

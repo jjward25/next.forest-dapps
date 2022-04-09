@@ -66,14 +66,12 @@
   }
 }
 .social-bar {
-  margin-bottom: 10px;
   display: flex;
   border-bottom: 1px solid $prim-green;
   border-top: 1px solid $prim-green;
   padding: 2.5% 0;
   justify-content: space-around;
   @include for-tablet-landscape-up {
-    margin-bottom: 0;
   }
 }
 .prj-pg-logo-wrap {
@@ -91,13 +89,13 @@
 .audience-wrap {
   display: flex;
   justify-content: flex-start;
-  margin: 2.5% 10px 1% 10px;
+  margin: 15px 10px 15px 0px;
   @include for-tablet-landscape-up {
     margin: 10px 0;
   }
 }
 .primary-audience {
-  margin: auto 15px auto 15px;
+  margin: auto 15px auto 0px;
   font-weight: 700;
   color: $prim-green;
   @include for-tablet-landscape-up {
@@ -125,22 +123,24 @@
 .action-btn-wrap {
   padding: 20px 0;
   display: flex;
+  flex-wrap: wrap;
+  border-bottom: 1px solid $prim-green;
+  @include for-tablet-landscape-up {
+    border: none;
+  }
 }
 .actions-btn {
-  display: none;
-  @include for-tablet-landscape-up {
-    display: block;
-    width: 100px;
-    text-align: center;
-    font-weight: bold;
-    padding: 1% 0;
-    margin: auto;
-    background-color: $green-highlight;
-    color: $bg-beige;
+  display: block;
+  width: 100px;
+  text-align: center;
+  font-weight: bold;
+  padding: 1% 0;
+  margin: auto;
+  background-color: $green-highlight;
+  color: $bg-beige;
 
-    border-radius: 10px;
-    box-shadow: 0px 0px 5px $prim-green;
-  }
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px $prim-green;
 }
 .title-wrap {
   display: flex;
@@ -148,21 +148,6 @@
   margin-bottom: 20px;
   @include for-tablet-landscape-up {
     margin-bottom: 10px;
-  }
-}
-.actions-btn-mobile {
-  width: 25px;
-  height: 25px;
-  text-align: center;
-  font-weight: bold;
-  margin: auto 0;
-  background-color: $green-highlight;
-  color: $bg-beige;
-  border: 1px solid $bg-beige;
-  border-radius: 10px;
-  box-shadow: 0px 0px 5px $prim-green;
-  @include for-tablet-landscape-up {
-    display: none;
   }
 }
 /** Top Right **/
@@ -199,13 +184,15 @@
     width: auto;
   }
 }
-
+.statbar-title {
+  margin: 10px auto 5px 0;
+}
 .statbar-left {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   text-align: left;
-  padding: 20px 10px;
+  padding: 0px 10px 6px 10px;
   border-bottom: 1px solid $prim-green;
   max-width: 100%;
   width: 100%;
@@ -226,7 +213,7 @@
   flex-direction: column;
   justify-content: space-around;
   text-align: left;
-  padding: 20px 10px;
+  padding: 0px 10px 6px 10px;
   border-bottom: 1px solid $prim-green;
   max-width: 100%;
   width: 100%;
@@ -278,7 +265,7 @@
   flex-direction: column;
   justify-content: space-around;
   text-align: left;
-  padding: 20px 10px;
+  padding: 0px 10px 6px 10px;
   border-bottom: 1px solid $prim-green;
   max-width: 100%;
   width: 100%;

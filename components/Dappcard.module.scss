@@ -93,6 +93,9 @@
   background-color: $bg-beige;
   color: $prim-green;
   font-weight: 800;
+  &:hover {
+    transform: scale(1.02);
+  }
 }
 /***** Back *****/
 .project-detail {
